@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import PersonalDetails from './personal-details'
-import Availability from './availability'
+import AvailabilitySelector from './availability'
 import SocialLinks from './social-links'
 import "./profile-settings.css"
 
@@ -35,7 +35,7 @@ const ProfileSettings = () => {
 
             <section id="profile-settings-tool" className="profile-settings-tool">
             {setting === "details" ? <PersonalDetails />
-            : setting === "availability" ? <Availability />
+            : setting === "availability" ? <AvailabilitySelector />
             : setting === "social" ? <SocialLinks />
             : null}
 
