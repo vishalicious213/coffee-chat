@@ -1,6 +1,7 @@
 import React from 'react'
 import PersonalDetails from './personal-details'
 import Availability from './availability'
+import SocialLinks from './social-links'
 import "./profile-settings.css"
 
 const ProfileSettings = () => {
@@ -18,6 +19,7 @@ const ProfileSettings = () => {
             <section id="profile-settings-tool" className="profile-settings-tool">
                 <PersonalDetails />
                 <Availability />
+                <SocialLinks />
             </section>
         </section>
     )
