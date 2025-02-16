@@ -3,13 +3,44 @@
 }
 
 .hamburger {
-    text-align: right;
-    z-index: 1;
     position: relative;
+    z-index: 1;
+    text-align: right;
+    cursor: pointer;
 }
 
 .hamburger-items {
-    z-index: 1;
     position: absolute;
     right: 1rem;
+    z-index: 1;
+    text-align: right;
+    background: white;
+    padding: 0 .5rem .5rem;
+    outline: 1px solid red;
+}
+
+.hamburger-items div {
+    margin-top: .25rem;
+    cursor: pointer;
+}
+
+.wide-menu {
+    display: none;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 600px) {
+    .hamburger {
+        display: none;
+    }
+
+    .wide-menu {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .wide-menu div {
+        cursor: pointer;
+    }
 }

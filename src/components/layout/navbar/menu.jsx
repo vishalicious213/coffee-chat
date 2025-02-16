@@ -24,6 +24,12 @@ const Menu = () => {
                 <div id="menu-msg">Messages</div>
                 <div id="menu-chat">Find a Chat</div>
             </div>
+
+            <section id="wide-menu" className="wide-menu" onClick={handleClick}>
+                <div id="menu-msg">Messages</div>
+                <div id="menu-chat">Find a Chat</div>
+                <div id="menu-avatar">Avatar</div>
+            </section>
         </div>
     )
 }
