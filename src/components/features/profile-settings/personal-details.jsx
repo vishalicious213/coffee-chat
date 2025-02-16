@@ -7,7 +7,7 @@ const PersonalDetails = () => {
         {firstName: "", 
          lastName: "", 
          email: "", 
-         comments: "", 
+         bio: "", 
          interests: "",
          pronouns: ""}
     )
@@ -48,10 +48,10 @@ const PersonalDetails = () => {
                 value={formData.email}
             />
             <textarea 
-                value={formData.comments}
-                placeholder="Comments"
+                value={formData.bio}
+                placeholder="Bio"
                 onChange={handleChange}
-                name="comments"
+                name="bio"
             />
 
             <label htmlFor="interests">Interests</label>
