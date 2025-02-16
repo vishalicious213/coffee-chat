@@ -20,8 +20,6 @@ const PersonalDetails = () => {
                 [name]: value
             }
         })
-
-        console.log(formData)
     }
 
     return (
