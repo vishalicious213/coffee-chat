@@ -16,6 +16,16 @@ const avatarPics = [
     "/avatars/tree.jpg",
 ]
 
+const avatarPicsHtml = avatarPics.map((pic, index) => (
+    <img 
+        key={index} 
+        src={pic} 
+        alt="user avatar photo" 
+        onClick={() => setAvatarImg(pic)} 
+        className="avatar-option"
+    />
+))
+
 const Avatar = () => {
     const [avatarImg, setAvatarImg] = useState(avatarPics[0])
     const [showAvatars, setShowAvatars] = useState(false)
@@ -25,17 +35,11 @@ const Avatar = () => {
         console.log(showAvatars)
     }
 
-    const renderAvatars = (
-            <section id="avatarSelection" className="avatarSelection">
-                AVATARS
-            </section>
-    )
-
     return (
         <section id="user-avatar" className="user-avatar">
             <div>Avatar</div>
             <img src={avatarImg} alt="user avatar photo" onClick={handleClick} />
-            <section id="avatarsContainer">{showAvatars ? renderAvatars : null}</section>
+            <section id="avatarsContainer" className="avatarsContainer">{showAvatars ? avatarPicsHtml : null}</section>
         </section>
     )
 }

@@ -19,8 +19,6 @@
     border-radius: 50%;
 }
 
-.avatarSelection {
-    /* border: 1px solid red;
-    background: red;
-    height: 3rem; */
+.avatarsContainer {
+    max-width: 20rem;
 }
