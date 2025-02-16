@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Navbar from './components/layout/navbar'
 import './App.css'
 
 function App() {
@@ -6,7 +7,10 @@ function App() {
 
   return (
     <>
-      Coffee Chat Roulette
+      <Navbar />
+      <section className="app">
+        <h1>Coffee Chat Roulette</h1>
+      </section>
     </>
   )
 }
