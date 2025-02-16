@@ -61,13 +61,20 @@ const PersonalDetails = () => {
                 </div>
                 <div className="form-group">
                     <label htmlFor="pronouns">Pronouns</label>
-                    <input
-                        type="text"
-                        placeholder="Placeholder"
+                    <select 
+                        id="pronouns"
+                        value={formData.pronouns}
                         onChange={handleChange}
                         name="pronouns"
-                        value={formData.pronouns}
-                    />
+                        className="select-input"
+                    >
+                        <option value="">Placeholder</option>
+                        <option value="unspecified">Don't specify</option>
+                        <option value="they">they/them</option>
+                        <option value="she">she/her</option>
+                        <option value="he">he/him</option>
+                        <option value="custom">Custom</option>
+                    </select>
                 </div>
             </div>
             <div className="form-group">
@@ -85,3 +92,6 @@ const PersonalDetails = () => {
 };
 
 export default PersonalDetails;
+
+
+
