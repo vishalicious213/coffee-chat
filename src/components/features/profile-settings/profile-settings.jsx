@@ -20,8 +20,6 @@ const ProfileSettings = () => {
         if (event.target.id === "social") {
             setSetting("social")
         }
-
-        console.log("xx", setting)
     }
 
     return (
