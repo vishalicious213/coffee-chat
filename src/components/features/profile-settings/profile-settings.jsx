@@ -3,6 +3,7 @@ import { useState } from 'react'
 import PersonalDetails from './personal-details'
 import AvailabilitySelector from './availability'
 import SocialLinks from './social-links'
+import '../../../App.css'
 import "./profile-settings.css"
 
 const ProfileSettings = () => {

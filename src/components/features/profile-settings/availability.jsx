@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useRef } from 'react'
 import { Copy, Trash2, RotateCcw } from 'lucide-react'
+import '../../../App.css'
 import './availability.css'
 import "./profile-settings.css"
 
