@@ -1,25 +1,46 @@
 import React from 'react'
+import { useState } from 'react'
 import PersonalDetails from './personal-details'
 import Availability from './availability'
 import SocialLinks from './social-links'
 import "./profile-settings.css"
 
 const ProfileSettings = () => {
+    const [setting, setSetting] = useState("details")
+
+    const handleClick = (event) => {
+        if (event.target.id === "details") {
+            setSetting("details")
+        } 
+
+        if (event.target.id === "availability") {
+            setSetting("availability")
+        }
+
+        if (event.target.id === "social") {
+            setSetting("social")
+        }
+
+        console.log("xx", setting)
+    }
+
     return (
         <section id="profile-settings" className="profile-settings">
             <section id="profile-settings-nav" className="profile-settings-nav">
                 <h1>Profile Settings</h1>
                 <ul id="profile-menu" className="profile-menu">
-                    <li>Personal Details</li>
-                    <li>Availability</li>
-                    <li>Social Links</li>
+                    <li id="details" onClick={handleClick}>Personal Details</li>
+                    <li id="availability" onClick={handleClick}>Availability</li>
+                    <li id="social" onClick={handleClick}>Social Links</li>
                 </ul>
             </section>
 
             <section id="profile-settings-tool" className="profile-settings-tool">
-                <PersonalDetails />
-                <Availability />
-                <SocialLinks />
+            {setting === "details" ? <PersonalDetails />
+            : setting === "availability" ? <Availability />
+            : setting === "social" ? <SocialLinks />
+            : null}
+
             </section>
         </section>
     )
