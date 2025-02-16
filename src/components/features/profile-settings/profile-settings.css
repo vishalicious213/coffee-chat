@@ -3,3 +3,11 @@
     display: grid;
     grid-template-columns: 1fr 3fr;
 }
+
+/* PROFILE SETTINGS NAV */
+
+.profile-menu li {
+    margin: 1rem;
+    list-style: none;
+    cursor: pointer;
+}
