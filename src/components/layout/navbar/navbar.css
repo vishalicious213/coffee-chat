@@ -1,4 +1,4 @@
-div {
-    outline: 1px solid orange;
+.navbar {
+    border: 1px solid orange;
     background: whitesmoke;
 }
