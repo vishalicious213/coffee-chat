@@ -11,3 +11,10 @@
     list-style: none;
     cursor: pointer;
 }
+
+/* AVATAR */
+
+.user-avatar img {
+    width: 4rem;
+    border-radius: 50%;
+}
