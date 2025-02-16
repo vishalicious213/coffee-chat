@@ -1,4 +1,8 @@
 .navbar {
     border: 1px solid orange;
     background: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 1rem;
 }
