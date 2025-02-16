@@ -9,9 +9,10 @@ function App() {
   return (
     <>
       <Navbar />
-      <section className="app">
+      <main></main>
+      {/* <section className="app">
         <h1>Coffee Chat Roulette</h1>
-      </section>
+      </section> */}
       <Dashboard />
     </>
   )
