@@ -4,7 +4,11 @@ import "./profile-settings.css"
 
 const PersonalDetails = () => {
     const [formData, setFormData] = useState(
-        {firstName: "", lastName: "", email: ""}
+        {firstName: "", 
+         lastName: "", 
+         email: "", 
+         comments: "", 
+         interests: ""}
     )
     
     function handleChange(event) {
@@ -42,6 +46,30 @@ const PersonalDetails = () => {
                 name="email"
                 value={formData.email}
             />
+            <textarea 
+                value={formData.comments}
+                placeholder="Comments"
+                onChange={handleChange}
+                name="comments"
+            />
+
+            <label htmlFor="interests">What is your favorite color?</label>
+            <br />
+            <select 
+                id="interests"
+                value={formData.interests}
+                onChange={handleChange}
+                name="interests"
+            >
+                <option value="">- Choose -</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">JavaScript</option>
+                <option value="react">React</option>
+                <option value="sql">SQL</option>
+                <option value="mongo">MongoDB</option>
+                <option value="tw">Tailwind</option>
+            </select>
         </form>
     )
 }
