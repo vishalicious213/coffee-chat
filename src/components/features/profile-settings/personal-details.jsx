@@ -24,6 +24,7 @@ const PersonalDetails = () => {
 
     return (
         <form>
+            <label htmlFor="firstName">First Name</label>
             <input
                 type="text"
                 placeholder="First Name"
@@ -31,6 +32,7 @@ const PersonalDetails = () => {
                 name="firstName"
                 value={formData.firstName}
             />
+            <label htmlFor="lastName">Last Name</label>
             <input
                 type="text"
                 placeholder="Last Name"
@@ -38,6 +40,7 @@ const PersonalDetails = () => {
                 name="lastName"
                 value={formData.lastName}
             />
+            <label htmlFor="email">Email</label>
             <input
                 type="email"
                 placeholder="Email"
@@ -45,6 +48,7 @@ const PersonalDetails = () => {
                 name="email"
                 value={formData.email}
             />
+            <label htmlFor="bio">Bio</label>
             <textarea 
                 value={formData.bio}
                 placeholder="Bio"
