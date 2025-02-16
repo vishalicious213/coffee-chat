@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import Avatar from './avatar'
 import '../../../App.css'
 import "./profile-settings.css"
 
@@ -25,6 +26,7 @@ const PersonalDetails = () => {
 
     return (
         <form>
+            <Avatar />
             <label htmlFor="firstName">First Name</label>
             <input
                 type="text"
