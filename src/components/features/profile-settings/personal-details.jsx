@@ -8,7 +8,8 @@ const PersonalDetails = () => {
          lastName: "", 
          email: "", 
          comments: "", 
-         interests: ""}
+         interests: "",
+         pronouns: ""}
     )
     
     function handleChange(event) {
@@ -53,7 +54,7 @@ const PersonalDetails = () => {
                 name="comments"
             />
 
-            <label htmlFor="interests">What is your favorite color?</label>
+            <label htmlFor="interests">Interests</label>
             <br />
             <select 
                 id="interests"
@@ -69,6 +70,22 @@ const PersonalDetails = () => {
                 <option value="sql">SQL</option>
                 <option value="mongo">MongoDB</option>
                 <option value="tw">Tailwind</option>
+            </select>
+
+            <label htmlFor="pronouns">Pronouns</label>
+            <br />
+            <select 
+                id="pronouns"
+                value={formData.pronouns}
+                onChange={handleChange}
+                name="pronouns"
+            >
+                <option value="">- Choose -</option>
+                <option value="unspecified">Don't specify</option>
+                <option value="they">they/them</option>
+                <option value="she">she/her</option>
+                <option value="he">he/him</option>
+                <option value="custom">Custom</option>
             </select>
         </form>
     )
