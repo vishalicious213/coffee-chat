@@ -3,12 +3,25 @@ import { useState } from 'react'
 import '../../../App.css'
 import "./profile-settings.css"
 
+const avatarPics = [
+    "/avatars/avocado.jpg",
+    "/avatars/cat.jpg",
+    "/avatars/cherry.jpg",
+    "/avatars/corgi.jpg",
+    "/avatars/cupcake.jpg",
+    "/avatars/frog.jpg",
+    "/avatars/orange.jpg",
+    "/avatars/palm-tree.jpg",
+    "/avatars/pug.jpg",
+    "/avatars/tree.jpg",
+]
+
 const Avatar = () => {
-    const [avatarImg, setAvatarImg] = useState("/avatars/avocado.jpg")
+    const [avatarImg, setAvatarImg] = useState(avatarPics[0])
     const [showAvatars, setShowAvatars] = useState(false)
 
     function handleClick() {
-        setShowAvatars(!showAvatars)
+        setShowAvatars(prev => !prev)
         console.log(showAvatars)
     }
 
