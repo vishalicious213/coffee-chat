@@ -1,0 +1,7 @@
+.connections{
+    display: grid;
+    align-items: flex-start;
+    gap: 2rem;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
