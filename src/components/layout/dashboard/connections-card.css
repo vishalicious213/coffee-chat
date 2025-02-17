@@ -1,3 +1,7 @@
 .connections-card img {
     width: 4rem;
 }
+
+.name-row {
+    display: flex;
+}
