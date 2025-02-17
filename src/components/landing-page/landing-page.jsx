@@ -1,10 +1,11 @@
 import React from 'react'
+import "./landing-page.css"
 
 const LandingPage = () => {
     return (
-        <>
-            <div>Landing Page</div>
-        </>
+        <section id="landing-page" className="landing-page">
+            <h1>Landing Page</h1>
+        </section>
     )
 }
 
