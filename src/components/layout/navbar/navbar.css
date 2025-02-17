@@ -49,12 +49,15 @@
   list-style: none;
 }
 .profile-settings {
-  border: 1px solid green;
   display: grid;
   grid-template-columns: 1fr 3fr;
+  height: 100vh;
 }
 
 .profile-settings-tool {
+  display: flex;
+  padding: 2rem 4rem;
+  align-items: flex-start;
   width: 100%;
 }
 
@@ -62,6 +65,8 @@
 .profile-settings-nav {
   display: flex;
   flex-direction: column;
+  border-right: 1px solid var(--neutral-200);
+  border-radius: var(--pd-small);
   flex-shrink: 0;
   gap: var(--pd-large);
   padding: var(--pd-medium);
@@ -88,11 +93,15 @@ ul {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: var(--pd-small);
   padding: var(--pd-regular);
   list-style: none;
   cursor: pointer;
+}
+
+.profile-menu li:hover {
+  background-color: var(--neutral-500);
 }
 
 /* AVATAR */
@@ -108,10 +117,17 @@ ul {
 
 .avatarsContainer {
   position: absolute;
-  padding: 1rem;
-  max-width: 22rem;
+  bottom: 0;
+  /* padding: 1rem; */
+  max-width: 26rem;
+  left: 5rem;
 }
 
 .avatarsContainerWhite {
   background: white;
+  padding: 1rem;
+}
+
+.avatar-option {
+  margin-left: 0.5rem;
 }
