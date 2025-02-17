@@ -66,6 +66,7 @@
   display: flex;
   flex-direction: column;
   border-right: 1px solid var(--neutral-200);
+  max-width: 20rem;
   border-radius: var(--pd-small);
   flex-shrink: 0;
   gap: var(--pd-large);
@@ -81,6 +82,7 @@ ul {
 
 .profile-settings-nav h2 {
   color: var(--neutral-500);
+  font-weight: 500;
 }
 
 .profile-settings-nav .profile-menu {
@@ -90,6 +92,7 @@ ul {
 }
 
 .profile-menu li {
+  font-weight: 500;
   width: 100%;
   display: flex;
   align-items: center;
@@ -101,7 +104,9 @@ ul {
 }
 
 .profile-menu li:hover {
-  background-color: var(--neutral-500);
+  background-color: var(--clr-brown);
+  color: white;
+  border-radius: var(--pd-small);
 }
 
 /* AVATAR */
