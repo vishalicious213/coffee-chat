@@ -1,0 +1,7 @@
+.coffee-chats-card {
+    display: flex;
+}
+
+.coffee-chats-card img {
+    width: 4rem;
+}

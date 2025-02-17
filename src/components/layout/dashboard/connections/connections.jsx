@@ -11,7 +11,7 @@ const Connections = () => {
     return (
         <section className="connections-container">
             <div className="connections-heading">
-                <h1>Connections</h1>
+                <h2>Connections</h2>
                 <p>View conversations starter guide</p>
             </div>
             <section className="connections">
