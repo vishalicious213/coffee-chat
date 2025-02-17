@@ -18,6 +18,7 @@ const LandingPage = ({changePage}) => {
     return (
         <section id="landing-page" className="landing-page">
             <h1>Landing Page</h1>
+            {/* DON'T GET RID OF THESE BUTTONS */}
             <button id="login-btn" className="login-btn" onClick={handleClick}>Log In</button>
             <button id="signup-btn" className="signup-btn" onClick={handleClick}>Sign Up</button>
         </section>
