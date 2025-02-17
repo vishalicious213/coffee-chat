@@ -83,7 +83,7 @@ select option:first-child {
 }
 
 .personal-details-form {
-  border: 1px solid red;
+  outline: 1px solid red;
 }
 
 .form-container button {
