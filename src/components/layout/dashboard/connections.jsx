@@ -1,8 +1,12 @@
 import React from 'react'
+import ConnectionsCard from './connections-card'
 
 const Connections = () => {
     return (
-        <div>Connections</div>
+        <>
+            <h1>Connections</h1>
+            <ConnectionsCard />
+        </>
     )
 }
 

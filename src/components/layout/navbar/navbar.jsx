@@ -13,7 +13,7 @@ const icons = [
 ]
 
 const Navbar = () => {
-    const [setting, setSetting] = useState("details")
+    const [setting, setSetting] = useState("dashboard")
 
     const handleClick = (event) => {
         if (event.target.id === "details") {
