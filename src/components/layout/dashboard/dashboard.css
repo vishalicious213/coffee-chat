@@ -8,3 +8,70 @@
 .requests-container {
     width: 100%;
 }
+
+.dashboard{
+    display: flex;
+    padding: 2rem 4rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.625rem;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+.dashboard h1{
+    color: #47343A;
+
+    /* Heading/H1/Medium/Desktop */
+    font-family: Inter;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3rem; /* 120% */
+    letter-spacing: -0.05rem;
+}
+.dashboard-containers{
+    display: flex;
+    align-items: flex-start;
+    gap: 1.875rem;
+    align-self: stretch;
+}
+.connections-container{
+    display: flex;
+    height: 56.375rem;
+    padding: 1.875rem 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.25rem;
+    flex: 1 0 0;
+
+    border-radius: 0.5rem;
+    border: 1px solid var(--Neutral-200, #E5E7EB);
+}
+.connections-container h2{
+    color: #47343A;
+
+    /* Heading/H4/Medium/Desktop */
+    font-family: Inter;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.25rem; /* 128.571% */
+    letter-spacing: -0.035rem;
+}
+.connections-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-self: stretch;
+}
+.connections-heading p{
+    color: #47343A;
+    text-align: right;
+
+    /* Paragraph/Small/Regular */
+    font-family: Inter;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem; /* 142.857% */
+}

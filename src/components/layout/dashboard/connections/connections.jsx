@@ -1,5 +1,6 @@
 import React from 'react'
 import ConnectionsCard from './connections-card'
+import "./connections.css"
 
 const test = ["Vish Singh", "Samir Shuman", "Nabeeha Ghani", "Giovanni Nazario"]
 
@@ -9,7 +10,7 @@ const examples = test.map((person, index) => (
 
 const Connections = () => {
     return (
-        <section className="connections-container">
+        <section className="">
             <div className="connections-heading">
                 <h2>Connections</h2>
                 <p>View conversations starter guide</p>

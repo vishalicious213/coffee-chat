@@ -1,22 +1,52 @@
-.connections {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .connections-heading {
     display: flex;
 }
 
 .connections-card {
-    text-align: center;
-    padding: 1rem;
-    max-width: 12rem;
+    display: flex;
+    padding: 1.25rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    flex: 1 0 0;
 }
 
 .connections-card img {
-    width: 4rem;
+    width: 3.5625rem;
+    height: 3.5625rem;
+    border-radius: 25rem;
+    border: 2px solid var(--Generic-White, #FFF);
+    background: var(--Avatar-Profile-09, url(<path-to-image>) lightgray 50% / cover no-repeat);
 }
-
+.name-and-connection-date-container h2{
+    color: var(--Dark-Brown, #47343A);
+    text-align: center;
+    /* Heading/H6/Semibold/Desktop */
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.75rem; /* 140% */
+    letter-spacing: -0.025rem;
+}
+.name-and-connection-date-container span{
+    color: var(--Medium-Brown, #7F5047);
+    text-align: center;
+    /* Paragraph/XSmall/Regular */
+    font-family: Inter;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem; /* 166.667% */
+}
 .name-row {
     display: flex;
+}
+.connections-card{
+    border-radius: 0.375rem;
+    border: 0.5px solid var(--Neutral-200, #E5E7EB);
+    background: #FFF;
+
+    /* Drop shadow/Small */
+    box-shadow: 0px 2px 6px 0px rgba(16, 24, 40, 0.06);
 }
