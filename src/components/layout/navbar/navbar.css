@@ -46,18 +46,16 @@
     grid-template-columns: 1fr 3fr;
 }
 
+.profile-settings-tool {
+    width: 100%;
+}
+
 /* PROFILE SETTINGS NAV */
 
 .profile-menu li {
     margin: 1rem;
     list-style: none;
     cursor: pointer;
-}
-
-.profile-menu img {
-    outline: 1px solid black;
-    stroke: blue;
-    background: red;
 }
 
 /* AVATAR */

@@ -4,6 +4,7 @@ import PersonalDetails from '../../features/profile-settings/personal-details'
 import AvailabilitySelector from '../../features/profile-settings/availability'
 import SocialLinks from '../../features/profile-settings/social-links'
 import Dashboard from '../dashboard/dashboard'
+import "./navbar.css"
 
 const icons = [
     "/icons/finger-print.svg",
