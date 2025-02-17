@@ -91,7 +91,7 @@ const LandingPage = ({changePage}) => {
                     {/* 3 Features layout */}
                     <section className='benefits-cards'>
                         <section>
-                            <img className="benefits-cards-icons" src=""></img>
+                            <img className="benefits-cards-icons" src="../../../public/icons/Right.svg"></img>
                             <h4>The most inspiring feature</h4>
                             <p>Tortor interdum condimentum nunc molestie quam lectus euismod pulvinar risus. Cursus in odio aenean.</p>
                             <div className='benefits-cards-view-more'>
@@ -100,7 +100,7 @@ const LandingPage = ({changePage}) => {
                             </div>
                         </section>
                         <section>
-                            <img className="benefits-cards-icons" src=""></img>
+                            <img className="benefits-cards-icons" src="../../../public/icons/Right.svg"></img>
                             <h4>The most inspiring feature</h4>
                             <p>Tortor interdum condimentum nunc molestie quam lectus euismod pulvinar risus. Cursus in odio aenean.</p>
                             <div className='benefits-cards-view-more'>
@@ -109,7 +109,7 @@ const LandingPage = ({changePage}) => {
                             </div>
                         </section>
                         <section>
-                            <img className="benefits-cards-icons" src=""></img>
+                            <img className="benefits-cards-icons" src="../../../public/icons/Right.svg"></img>
                             <h4>The most inspiring feature</h4>
                             <p>Tortor interdum condimentum nunc molestie quam lectus euismod pulvinar risus. Cursus in odio aenean.</p>
                             <div className='benefits-cards-view-more'>
