@@ -29,17 +29,22 @@ const avatarPicsHtml = avatarPics.map((pic, index) => (
 const Avatar = () => {
     const [avatarImg, setAvatarImg] = useState(avatarPics[0])
     const [showAvatars, setShowAvatars] = useState(false)
+    const [seeAvatars, setSeeAvatars] = useState("avatarsContainer hidden")
 
     function handleClick() {
         setShowAvatars(prev => !prev)
-        console.log(showAvatars)
+        if (!showAvatars) {
+            setSeeAvatars("avatarsContainer avatarsContainerWhite")
+        } else {
+            setSeeAvatars("avatarsContainer hidden")
+        }
     }
 
     return (
         <section id="user-avatar" className="user-avatar">
             <div>Avatar</div>
             <img src={avatarImg} alt="user avatar photo" onClick={handleClick} />
-            <section id="avatarsContainer" className="avatarsContainer">{showAvatars ? avatarPicsHtml : null}</section>
+            <section id="avatarsContainer" className={seeAvatars}>{showAvatars ? avatarPicsHtml : null}</section>
         </section>
     )
 }
