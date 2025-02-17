@@ -60,7 +60,6 @@ const Navbar = () => {
                     </li>
                 </ul>
 
-            
                 <ul>
                     <li>Support</li>
                 </ul>
@@ -75,12 +74,10 @@ const Navbar = () => {
             </section>
 
             <section id="profile-settings-tool" className="profile-settings-tool">
-            <h1>Profile Settings</h1>
-            {setting === "details" ? <PersonalDetails />
-            : setting === "availability" ? <AvailabilitySelector />
-            : setting === "social" ? <SocialLinks />
-            : null}
-
+                {setting === "details" ? <PersonalDetails />
+                : setting === "availability" ? <AvailabilitySelector />
+                : setting === "social" ? <SocialLinks />
+                : null}
             </section>
         </section>
     )

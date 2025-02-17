@@ -24,6 +24,8 @@ const SocialLinks = () => {
     }
 
     return (
+        <>
+        <h2>Social Links</h2>
         <form>
             <input
                 type="text"
@@ -68,6 +70,7 @@ const SocialLinks = () => {
                 value={formData.blog}
             />
         </form>
+        </>
     )
 }
 
