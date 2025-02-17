@@ -1,0 +1,7 @@
+.chat-requests-card {
+    display: flex;
+}
+
+.chat-requests-card img {
+    width: 4rem;
+}
