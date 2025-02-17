@@ -16,7 +16,7 @@ function App() {
       {/* <section className="app">
         <h1>Coffee Chat Roulette</h1>
       </section> */}
-      <Dashboard />
+      {/* <Dashboard /> */}
     </>
   )
 }

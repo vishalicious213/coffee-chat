@@ -3,6 +3,7 @@ import { useState } from 'react'
 import PersonalDetails from '../../features/profile-settings/personal-details'
 import AvailabilitySelector from '../../features/profile-settings/availability'
 import SocialLinks from '../../features/profile-settings/social-links'
+import Dashboard from '../dashboard/dashboard'
 import '../../../App.css'
 // import "./profile-settings.css"
 
@@ -27,6 +28,10 @@ const Navbar = () => {
         if (event.target.id === "social") {
             setSetting("social")
         }
+
+        if (event.target.id === "home") {
+            setSetting("dashboard")
+        }
     }
 
     return (
@@ -37,7 +42,7 @@ const Navbar = () => {
                 <h2 id="my-dashboard">My Dashboard</h2>
                 <ul>
                     {/* My dashboard - Section title */}
-                    <li id="home">Home</li>
+                    <li id="home" onClick={handleClick}>Home</li>
                     <li id="find-a-chat">Find a Chat</li>
                     <li id="messages">Messages</li>
                 </ul>
@@ -77,6 +82,7 @@ const Navbar = () => {
                 {setting === "details" ? <PersonalDetails />
                 : setting === "availability" ? <AvailabilitySelector />
                 : setting === "social" ? <SocialLinks />
+                : setting === "dashboard" ? <Dashboard />
                 : null}
             </section>
         </section>
