@@ -6,10 +6,6 @@ import './navbar.css'
 const Navbar = () => {
     return (
         <>
-            <nav id="navbar" className="navbar">
-                <h1>App Icon</h1>
-                <Menu />
-            </nav>
         </>
     )
 }
