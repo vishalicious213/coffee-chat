@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import LandingPage from './components/landing-page/landing-page'
 import Navbar from './components/layout/navbar/navbar'
+import Signup from './components/features/signup/signup'
 import Dashboard from './components/layout/dashboard/dashboard'
 import ProfileSettings from './components/features/profile-settings/profile-settings'
 import './App.css'
@@ -14,7 +15,7 @@ function App() {
 
       {pageToLoad === "landingpage" ? <LandingPage changePage={setPageToLoad} />
         : pageToLoad === "navbar" ? <Navbar />
-        // : pageToLoad === "social" ? <SocialLinks />
+        : pageToLoad === "signup" ? <Signup />
         // : pageToLoad === "dashboard" ? <Dashboard />
         : null}
 

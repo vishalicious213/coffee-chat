@@ -11,7 +11,7 @@ const LandingPage = ({changePage}) => {
         } 
 
         if (event.target.id === "signup-btn") {
-            changePage("signup-btn")
+            changePage("signup")
         }
     }
 
