@@ -22,7 +22,7 @@ const LandingPage = ({changePage}) => {
                 <nav>
                     <ul>
                         <li>
-                            <img src="" alt="" />
+                            <img src="../../../public/icons/Right.svg" alt="" />
                         </li>
                         <li>About Us</li>
                         <li>FAQ</li>
@@ -125,7 +125,7 @@ const LandingPage = ({changePage}) => {
             {/* Footer */}
             <section className="footer">
                 <section>
-                    <img src=""/>
+                    <img src="../../../public/icons/Right.svg"/>
 
                     <ul>
                         <li>About Us</li>
