@@ -1,20 +1,50 @@
-:root{
-  --fc-primary: rgba(1,2,3);
-  --fs-h1: 3 rem;
-  --ff-inter: "Inter", sans-serif;
+:root {
+  /* Colors */
+  --clr-brown: rgba(71, 52, 58, 1);
+  --clr-white: white;
+  --neutral-200: rgba(229, 231, 235, 1);
+  --neutral-500: rgba(107, 114, 128, 1);
+
+  /* Font size */
+  --fs-h2: 2.5rem;
+  --fs-input: 0.875rem;
+
+  /* Font family */
+  --ff-body: "Inter", sans-serif;
+
+  /* Font weights */
   --fw-600: 600;
-  --lh-1125: 1.125rem
+  --fw-input-label: 500;
+  --fw-h1: 500;
+  --fw-input-field: 400;
+  --fw-subheading: 400;
+
+  /* Line height */
+  --lh-1125: 1.125rem;
+  --lh-1: 1rem;
+  --lh-3: 3rem;
+
+  /* Letter spacing */
+  --ls-h1: -0.05rem;
+
+  /* utilities */
+  --pd-x-small: 0.25rem;
+  --pd-small: 0.5rem;
+  --pd-regular: 1rem;
+  --pd-medium: 1.25rem;
+  --pd-large: 1.5rem;
+  --pd-x-large: 2rem;
 }
 * {
   font-family: "Inter";
+  color: var(--clr-brown);
   border: 1px solid red;
   font: var(--label-large-semibold);
   /* max-width: 1280px; */
-  margin: 0 auto;
+  /* margin: 0 auto; */
   background: white;
 }
 .app {
   text-align: center;
   /* padding: 2rem; */
 }
-
