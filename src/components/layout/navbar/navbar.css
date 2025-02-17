@@ -54,6 +54,12 @@
     cursor: pointer;
 }
 
+.profile-menu img {
+    outline: 1px solid black;
+    stroke: blue;
+    background: red;
+}
+
 /* AVATAR */
 
 .user-avatar {
