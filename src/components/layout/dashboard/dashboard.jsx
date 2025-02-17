@@ -1,6 +1,7 @@
 import React from 'react'
 import Connections from './connections'
 import CoffeeChats from './coffee-chats'
+import ChatRequests from './chat-requests'
 import '../../../App.css'
 import './dashboard.css'
 
@@ -16,7 +17,9 @@ const Dashboard = () => {
                     <section id="chats-container" className="chats-container">
                         <CoffeeChats />
                     </section>
-                    <section id="requests-container" className="requests-container">requests</section>
+                    <section id="requests-container" className="requests-container">
+                        <ChatRequests />
+                    </section>
                 </section>
             </section>
         </section>
