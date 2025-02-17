@@ -1,5 +1,10 @@
-.dashboard {
-    border: 1px solid yellowgreen;
-    background: whitesmoke;
+.dashboard-containers {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.connections-container,
+.chats-container,
+.requests-container {
     width: 100%;
 }
