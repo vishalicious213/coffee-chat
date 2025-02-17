@@ -1,3 +1,13 @@
+.connections-heading {
+    display: flex;
+}
+
+.connections-card {
+    text-align: center;
+    padding: 1rem;
+    max-width: 12rem;
+}
+
 .connections-card img {
     width: 4rem;
 }
