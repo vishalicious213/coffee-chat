@@ -5,13 +5,13 @@ import ProfileSettings from './components/features/profile-settings/profile-sett
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   return (
     <>
       <Navbar />
       <main>
-        <ProfileSettings />
+        {/* <ProfileSettings /> */}
       </main>
       {/* <section className="app">
         <h1>Coffee Chat Roulette</h1>

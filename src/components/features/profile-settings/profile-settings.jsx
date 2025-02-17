@@ -66,8 +66,9 @@ const ProfileSettings = () => {
                 </ul>
 
                 {/* Avatar with info and logout button */}
+                {/* We have to grab the profile pic for the img below */}
                 <section>
-                    <img src=""></img>
+                    <img src={icons[0]}></img>
                     <span>Designership</span>
                     <span>email@email.com</span>
                 </section>

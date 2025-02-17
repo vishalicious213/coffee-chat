@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
     border: 1px solid orange;
     background: whitesmoke;
     display: flex;
@@ -6,4 +6,71 @@
     align-items: center;
     padding: .5rem 1rem;
     height: 2.5em
+} */
+
+:root {
+    /* Colors */
+    --fc-dark-brown: #47343A;
+    --fc-primary: rgba(1,2,3);
+    --neutral-400: #9CA3AF;
+
+    /* Font size */
+    --fs-h1: 2.5 rem;
+    --fs-1rem: 1rem;
+    --fs-input: .875rem;
+
+    /* Font family */
+    --ff-body: "Inter", sans-serif;
+
+    /* Font weights */
+    --fw-600: 600;
+    --fw-input-label: 500;
+    --fw-h1: 500;
+    --fw-input-field: 400;
+    --fw-subheading: 400;
+
+    /* Line height */
+    --lh-1125: 1.125rem;
+    --lh-1: 1rem;
+    --lh-3: 3rem;
+
+    /* Letter spacing */
+    --ls-h1: -0.05rem;
+}
+* {
+    font-family: var(--ff-body);
+}
+.profile-settings {
+    border: 1px solid green;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+/* PROFILE SETTINGS NAV */
+
+.profile-menu li {
+    margin: 1rem;
+    list-style: none;
+    cursor: pointer;
+}
+
+/* AVATAR */
+
+.user-avatar {
+    position: relative;
+}
+
+.user-avatar img {
+    width: 4rem;
+    border-radius: 50%;
+}
+
+.avatarsContainer {
+    position: absolute;
+    padding: 1rem;
+    max-width: 22rem;
+}
+
+.avatarsContainerWhite {
+    background: white;
 }
