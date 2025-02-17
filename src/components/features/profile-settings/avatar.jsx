@@ -16,20 +16,20 @@ const avatarPics = [
     "/avatars/tree.jpg",
 ]
 
-const avatarPicsHtml = avatarPics.map((pic, index) => (
-    <img 
-        key={index} 
-        src={pic} 
-        alt="user avatar photo" 
-        onClick={() => setAvatarImg(pic)} 
-        className="avatar-option"
-    />
-))
-
 const Avatar = () => {
     const [avatarImg, setAvatarImg] = useState(avatarPics[0])
     const [showAvatars, setShowAvatars] = useState(false)
     const [seeAvatars, setSeeAvatars] = useState("avatarsContainer hidden")
+    
+    const avatarPicsHtml = avatarPics.map((pic, index) => (
+        <img 
+            key={index} 
+            src={pic} 
+            alt="user avatar photo" 
+            onClick={() => setAvatarImg(pic)} 
+            className="avatar-option"
+        />
+    ))
 
     function handleClick() {
         setShowAvatars(prev => !prev)
