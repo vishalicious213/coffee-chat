@@ -3,7 +3,6 @@ import { useState, useRef } from 'react'
 import { Copy, Trash2, RotateCcw } from 'lucide-react'
 import '../../../App.css'
 import './availability.css'
-import "./profile-settings.css"
 
 const TimeBlock = ({ hour, selected, selecting, onMouseDown, onMouseEnter, onMouseUp }) => {
   const displayHour = hour % 12 || 12

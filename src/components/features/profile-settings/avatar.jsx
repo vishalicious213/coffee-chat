@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
 import '../../../App.css'
-import "./profile-settings.css"
 
 const avatarPics = [
     "/avatars/avocado.jpg",

@@ -2,7 +2,6 @@ import React from 'react'
 import { useState } from 'react'
 import Avatar from './avatar'
 import '../../../App.css'
-import "./profile-settings.css"
 import "./personal-details.css"
 
 const PersonalDetails = () => {
