@@ -1,10 +1,11 @@
-import React from "react";
-import { useState } from "react";
-import PersonalDetails from "../../features/profile-settings/personal-details";
-import AvailabilitySelector from "../../features/profile-settings/availability";
-import SocialLinks from "../../features/profile-settings/social-links";
-import Dashboard from "../dashboard/dashboard";
-import "./navbar.css";
+import React from "react"
+import { useState } from "react"
+import PersonalDetails from "../../features/profile-settings/personal-details"
+import AvailabilitySelector from "../../features/profile-settings/availability"
+import SocialLinks from "../../features/profile-settings/social-links"
+import Dashboard from "../dashboard/dashboard"
+import FindChat from "../../features/find-chat/find-chat"
+import "./navbar.css"
 
 const icons = [
   "/icons/finger-print.svg",
@@ -13,23 +14,27 @@ const icons = [
 ];
 
 const Navbar = () => {
-  const [setting, setSetting] = useState("dashboard");
+  const [setting, setSetting] = useState("dashboard")
 
   const handleClick = (event) => {
     if (event.target.id === "details") {
-      setSetting("details");
+      setSetting("details")
     }
 
     if (event.target.id === "availability") {
-      setSetting("availability");
+      setSetting("availability")
     }
 
     if (event.target.id === "social") {
-      setSetting("social");
+      setSetting("social")
     }
 
     if (event.target.id === "home") {
-      setSetting("dashboard");
+      setSetting("dashboard")
+    }
+
+    if (event.target.id === "find-chat") {
+      setSetting("find-chat")
     }
   };
 
@@ -53,10 +58,8 @@ const Navbar = () => {
         <h2>My Dashboard</h2>
         <ul className="profile-menu">
           {/* My dashboard - Section title */}
-          <li id="home" onClick={handleClick}>
-            Home
-          </li>
-          <li id="find-a-chat">Find a Chat</li>
+          <li id="home" onClick={handleClick}>Home</li>
+          <li id="find-chat" onClick={handleClick}>Find a Chat</li>
           <li id="messages">Messages</li>
         </ul>
 
@@ -100,10 +103,12 @@ const Navbar = () => {
           <SocialLinks />
         ) : setting === "dashboard" ? (
           <Dashboard />
+        ) : setting === "find-chat" ? (
+          <FindChat />
         ) : null}
       </section>
     </section>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
