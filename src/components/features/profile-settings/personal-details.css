@@ -81,3 +81,11 @@ textarea::placeholder,
 select option:first-child {
   color: #a0aec0;
 }
+
+.personal-details-form {
+  border: 1px solid red;
+}
+
+.form-container button {
+  outline: 1px solid red;
+}
