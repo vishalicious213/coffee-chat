@@ -25,7 +25,7 @@ const PersonalDetails = () => {
 
     return (
         <form className="form-container">
-            <h2>Profile Settings</h2>
+            <h2>Personal Details</h2>
             <Avatar />
             <div className="form-row">
                 <div className="form-group">
