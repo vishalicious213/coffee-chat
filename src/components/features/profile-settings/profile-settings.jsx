@@ -6,6 +6,12 @@ import SocialLinks from './social-links'
 import '../../../App.css'
 import "./profile-settings.css"
 
+const icons = [
+    "/icons/finger-print.svg",
+    "/icons/calendar-days.svg",
+    "/icons/link.svg",
+]
+
 const ProfileSettings = () => {
     const [setting, setSetting] = useState("details")
 
@@ -28,9 +34,18 @@ const ProfileSettings = () => {
             <section id="profile-settings-nav" className="profile-settings-nav">
                 <h1>Profile Settings</h1>
                 <ul id="profile-menu" className="profile-menu">
-                    <li id="details" onClick={handleClick}>Personal Details</li>
-                    <li id="availability" onClick={handleClick}>Availability</li>
-                    <li id="social" onClick={handleClick}>Social Links</li>
+                    <li id="details" onClick={handleClick}>
+                        <img src={icons[0]}></img>
+                        Personal Details
+                    </li>
+                    <li id="availability" onClick={handleClick}>
+                        <img src={icons[1]}></img>
+                        Availability
+                    </li>
+                    <li id="social" onClick={handleClick}>
+                        <img src={icons[2]}></img>
+                        Social Links
+                    </li>
                 </ul>
             </section>
 
