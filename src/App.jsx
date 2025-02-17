@@ -6,12 +6,19 @@ import ProfileSettings from './components/features/profile-settings/profile-sett
 import './App.css'
 
 function App() {
-  // const [count, setCount] = useState(0)
+  const [pageToLoad, setPageToLoad] = useState("landingpage")
 
   return (
     <>
-      <LandingPage />
-      <Navbar />
+      {/* <LandingPage changePage={setPageToLoad} /> */}
+
+      {pageToLoad === "landingpage" ? <LandingPage changePage={setPageToLoad} />
+        : pageToLoad === "navbar" ? <Navbar />
+        // : pageToLoad === "social" ? <SocialLinks />
+        // : pageToLoad === "dashboard" ? <Dashboard />
+        : null}
+
+      {/* <Navbar /> */}
       <main>
         {/* <ProfileSettings /> */}
       </main>
