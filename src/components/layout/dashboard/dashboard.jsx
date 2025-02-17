@@ -1,7 +1,7 @@
 import React from 'react'
-import Connections from './connections'
-import CoffeeChats from './coffee-chats'
-import ChatRequests from './chat-requests'
+import Connections from './connections/connections'
+import CoffeeChats from './coffee-chats/coffee-chats'
+import ChatRequests from './chat-requests/chat-requests'
 import '../../../App.css'
 import './dashboard.css'
 
