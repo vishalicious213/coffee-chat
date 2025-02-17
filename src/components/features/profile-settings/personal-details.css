@@ -6,7 +6,7 @@
 .form-container {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: var(--pd-large);
   width: 100%;
   max-width: 600px;
   padding: 20px;
