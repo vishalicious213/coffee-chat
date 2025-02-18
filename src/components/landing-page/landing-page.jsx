@@ -22,7 +22,7 @@ const LandingPage = ({changePage}) => {
                 <nav>
                     <ul>
                         <li>
-                            <img className="logo-landing" src="../../../public/icons/logo-light.svg" alt="" />
+                            <img className="logo-landing" src="/icons/logo-light.svg" alt="" />
                         </li>
                         <li className="nav-item">About Us</li>
                         <li className="nav-item">FAQ</li>
@@ -116,30 +116,30 @@ const LandingPage = ({changePage}) => {
                     {/* 3 Features layout */}
                     <section className='benefits-cards'>
                         <section>
-                            <img className="benefits-cards-icons" src="../../../public/icons/brown-star-empty.svg"></img>
+                            <img className="benefits-cards-icons" src="/icons/brown-star-empty.svg"></img>
                             <h4>Effortless Matching</h4>
                             <p>Tell us your interests, and we’ll connect you with someone who shares your goals and passions.</p>
                             <div className='benefits-cards-view-more'>
                                 <span>View more</span>
-                                <img src="public/icons/LightBrownArrow.svg"></img>
+                                <img src="/icons/LightBrownArrow.svg"></img>
                             </div>
                         </section>
                         <section>
-                            <img className="benefits-cards-icons" src="../../../public/icons/brown-globe.svg"></img>
+                            <img className="benefits-cards-icons" src="/icons/brown-globe.svg"></img>
                             <h4>Expand Your Network</h4>
                             <p>Meet professionals, students, and interesting people—right from home.</p>
                             <div className='benefits-cards-view-more'>
                                 <span>View more</span>
-                                <img src="public/icons/LightBrownArrow.svg"></img>
+                                <img src="/icons/LightBrownArrow.svg"></img>
                             </div>
                         </section>
                         <section>
-                            <img className="benefits-cards-icons" src="../../../public/icons/brown-clock.svg"></img>
+                            <img className="benefits-cards-icons" src="/icons/brown-clock.svg"></img>
                             <h4>Chat on Your Schedule</h4>
                             <p>Set up a time that works for you and enjoy a relaxed, engaging conversation.</p>
                             <div className='benefits-cards-view-more'>
                                 <span>View more</span>
-                                <img src="public/icons/LightBrownArrow.svg"></img>
+                                <img src="/icons/LightBrownArrow.svg"></img>
                             </div>
                         </section>
                     </section>
@@ -150,7 +150,7 @@ const LandingPage = ({changePage}) => {
             {/* Footer */}
             <section className="footer">
                 <section>
-                    <img src="public/icons/logo-dark.svg"/>
+                    <img src="/icons/logo-dark.svg"/>
 
                     <ul>
                         <li>About Us</li>

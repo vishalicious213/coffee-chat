@@ -5,6 +5,8 @@ import AvailabilitySelector from "../../features/profile-settings/availability";
 import SocialLinks from "../../features/profile-settings/social-links";
 import Dashboard from "../dashboard/dashboard";
 import FindChat from "../../features/find-chat/find-chat";
+import Match from "../../features/find-chat/match";
+import Icebreakers from "../../features/icebreakers/icebreakers";
 import "./navbar.css";
 
 const icons = [
@@ -16,27 +18,9 @@ const icons = [
 const Navbar = () => {
   const [setting, setSetting] = useState("dashboard");
 
-  const handleClick = (event) => {
-    if (event.target.id === "details") {
-      setSetting("details");
-    }
-
-    if (event.target.id === "availability") {
-      setSetting("availability");
-    }
-
-    if (event.target.id === "social") {
-      setSetting("social");
-    }
-
-    if (event.target.id === "home") {
-      setSetting("dashboard");
-    }
-
-    if (event.target.id === "find-chat") {
-      setSetting("find-chat");
-    }
-  };
+  const handleClick = (newSetting) => {
+    setSetting(newSetting)
+  }
 
   return (
     <section id="profile-settings" className="profile-settings">
@@ -44,13 +28,13 @@ const Navbar = () => {
         {/* Sidebar Nav Header */}
         <section className="top-sidebar-wrapper">
           <section className="sideBar-header">
-            <img src="public/icons/logo-dark.svg"></img>
+            <img src="/icons/logo-dark.svg"></img>
             <ul>
               <li id="notification-bell">
-                <img src="public/icons/bell.svg"></img>
+                <img src="/icons/bell.svg"></img>
               </li>
               <li id="hamburger-menu-icon">
-                <img src="public/icons/hamburger-icon.svg"></img>
+                <img src="/icons/hamburger-icon.svg"></img>
               </li>
             </ul>
           </section>
@@ -59,16 +43,16 @@ const Navbar = () => {
           <h2>My Dashboard</h2>
           <ul className="profile-menu">
             {/* My dashboard - Section title */}
-            <li id="home" onClick={handleClick}>
-              <img src="public/icons/home.svg"></img>
+            <li id="home" onClick={() => handleClick("dashboard")}>
+              <img src="/icons/home.svg"></img>
               Home
             </li>
-            <li id="find-chat" onClick={handleClick}>
-              <img src="public/icons/microphone.svg"></img>
+            <li id="find-chat" onClick={() => handleClick("find-chat")}>
+              <img src="/icons/microphone.svg"></img>
               Find a Chat
             </li>
             <li id="messages">
-              <img src="public/icons/chat-alt.svg"></img>
+              <img src="/icons/chat-alt.svg"></img>
               Messages
             </li>
           </ul>
@@ -77,15 +61,15 @@ const Navbar = () => {
           <h2>My Profile</h2>
           <ul id="profile-menu" className="profile-menu">
             {/* My produce - section title */}
-            <li id="details" onClick={handleClick}>
+            <li id="details" onClick={() => handleClick("details")}>
               <img src={icons[0]}></img>
               Personal Details
             </li>
-            <li id="availability" onClick={handleClick}>
+            <li id="availability" onClick={() => handleClick("availability")}>
               <img src={icons[1]}></img>
               Availability
             </li>
-            <li id="social" onClick={handleClick}>
+            <li id="social" onClick={() => handleClick("social")}>
               <img src={icons[2]}></img>
               Social Links
             </li>
@@ -94,7 +78,7 @@ const Navbar = () => {
         <section className="sidebar-footer">
           <ul>
             <li>
-              <img src="public/icons/support-lifebuoy.svg"></img>
+              <img src="/icons/support-lifebuoy.svg"></img>
               Support
             </li>
           </ul>
@@ -102,14 +86,14 @@ const Navbar = () => {
           {/* Avatar with info and logout button */}
           {/* We have to grab the profile pic for the img below */}
           <section className="sidebar-footer-button">
-            <img src="public/icons/avatar-icon.svg"></img>
+            <img src="/icons/avatar-icon.svg"></img>
             <section className="sidebar-footer-content">
               <span>Designership</span>
               <span>email@email.com</span>
             </section>
             <img
               className="sidebar-footer-logout-icon"
-              src="public/icons/logout-right.svg"
+              src="/icons/logout-right.svg"
             ></img>
           </section>
         </section>
@@ -123,9 +107,13 @@ const Navbar = () => {
         ) : setting === "social" ? (
           <SocialLinks />
         ) : setting === "dashboard" ? (
-          <Dashboard />
+          <Dashboard navTo={handleClick} />
         ) : setting === "find-chat" ? (
-          <FindChat />
+          <FindChat navTo={handleClick} />
+        ) : setting === "find-match" ? (
+          <Match />
+        ) : setting === "icebreakers" ? (
+          <Icebreakers />
         ) : null}
       </section>
     </section>

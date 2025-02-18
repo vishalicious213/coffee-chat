@@ -281,7 +281,7 @@ const AvailabilitySelector = () => {
           }}
         >
           Save Availability
-          <img src="public\icons\Right.svg"></img>
+          <img src="/icons/Right.svg"></img>
         </button>
       </div>
     </div>

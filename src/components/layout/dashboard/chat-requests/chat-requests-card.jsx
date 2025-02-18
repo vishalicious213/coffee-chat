@@ -12,8 +12,8 @@ const ChatRequestsCard = (props) => {
                 </div>
             </div>
             <div className="requests-check-x-container">
-                <img className="requests-check-x" src="../../../public/icons/check.svg"></img>
-                <img className="requests-check-x" src="../../../public/icons/x.svg"></img>
+                <img className="requests-check-x" src="/icons/check.svg"></img>
+                <img className="requests-check-x" src="/icons/x.svg"></img>
             </div>
         </section>
     )

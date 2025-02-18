@@ -5,13 +5,13 @@ import ChatRequests from './chat-requests/chat-requests'
 import '../../../App.css'
 import './dashboard.css'
 
-const Dashboard = () => {
+const Dashboard = ({navTo}) => {
     return (
         <section id="dashboard" className="dashboard">
             <h1>Home</h1>
             <section className="dashboard-containers">
                 <section id="connections-container" className="connections-container">
-                    <Connections />
+                    <Connections navTo={navTo} />
                 </section>
                 <section id="chats-requests-container" className="chats-requests-container">
                     <section id="chats-container" className="chats-container">
