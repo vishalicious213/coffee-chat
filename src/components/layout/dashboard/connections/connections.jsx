@@ -8,12 +8,12 @@ const examples = test.map((person, index) => (
     <ConnectionsCard name={person} key={index} />
 ))
 
-const Connections = () => {
+const Connections = ({navTo}) => {
     return (
         <section className="">
             <div className="connections-heading">
                 <h2>Connections</h2>
-                <p>View conversations starters</p>
+                <p onClick={() => navTo("icebreakers")}>View conversations starters</p>
             </div>
             <section className="connections">
                 {examples}
