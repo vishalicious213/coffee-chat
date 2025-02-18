@@ -1,7 +1,77 @@
-.social-links-form {
-    outline: 1px solid red;
+.social-links-section-title{
+    color: #47343A;
+    /* Heading/H1/Medium/Desktop */
+    font-family: Inter;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3rem; /* 120% */
+    letter-spacing: -0.05rem;
 }
+.social-links-section{
+    display: flex;
+    flex-direction: column;
+    height: 64rem;
+    align-items: flex-start;
+    gap: 0.625rem;
+}
+.social-links-form-container form{
+    display: flex;
+    width: 100%;
+    padding: 0 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.25rem;
+    background: var(--Generic-White, #FFF);
+}
+.social-links-form-container input{
+    width: 100%;
+}
+.social-links-form-container{
+    display: flex;
+    width: 37.5rem;
+    padding: 2.5rem 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.25rem;
+    background: var(--Generic-White, #FFF);
+}
+.social-links-form-container{
+    border-radius: 0.5rem;
+    border: 1px solid var(--Neutral-200, #E5E7EB);
+}
+.social-links-form-container form label{
+    color: #47343A;
 
-.social-links-form button {
-    outline: 1px solid red;
+    /* Label/Medium/Medium */
+    font-family: Inter;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1rem; /* 114.286% */
+}
+.label-and-input-socials{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    align-self: stretch;
+}
+.save-links-button{
+    display: flex;
+    width: 100%;
+    padding: 0.875rem 1.25rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #47343A;
+    background: #47343A;
+
+    /* Drop shadow/Small */
+    box-shadow: 0px 2px 6px 0px rgba(16, 24, 40, 0.06);
+}
+.save-links-button img, .save-links-button span{
+    background-color: #47343A;
+    color: white
 }

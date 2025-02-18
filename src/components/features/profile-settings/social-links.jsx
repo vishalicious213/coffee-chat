@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import '../../../App.css'
-import './social-links.css'
+import "./social-links.css"
 
 const SocialLinks = () => {
     const [formData, setFormData] = useState(
