@@ -138,6 +138,16 @@ nav ul button:last-child{
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04), 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
 }
 
+/* login & signup buttons have anchor tags*/
+nav ul a { 
+  text-decoration: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+
 /* Hero section styling */
 
 .hero{
