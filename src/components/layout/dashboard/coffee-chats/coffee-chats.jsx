@@ -1,5 +1,7 @@
 import React from 'react'
 import CoffeeChatsCard from './coffee-chats-card'
+import "./coffee-chats.css"
+
 
 const test = ["Vish Singh", "Samir Shuman", "Nabeeha Ghani", "Giovanni Nazario"]
 

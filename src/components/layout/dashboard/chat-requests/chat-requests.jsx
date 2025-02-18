@@ -1,5 +1,7 @@
 import React from 'react'
 import ChatRequestsCard from './chat-requests-card'
+import "./chat-requests.css"
+
 
 const test = ["Vish Singh", "Samir Shuman", "Nabeeha Ghani", "Giovanni Nazario"]
 
