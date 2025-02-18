@@ -10,8 +10,6 @@
   width: 100%;
   max-width: 600px;
   padding: 20px;
-  border: 1px solid var(--neutral-200);
-  border-radius: var(--pd-small);
 }
 
 .form-container h2 {
@@ -83,9 +81,20 @@ select option:first-child {
 }
 
 .personal-details-form {
-  outline: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border: 1px solid var(--neutral-200);
+  border-radius: var(--pd-small);
+  padding: 2.5rem 2rem;
 }
 
 .form-container button {
-  outline: 1px solid red;
+  display: flex;
+  gap: var(--pd-small);
+  justify-content: center;
+  background: var(--clr-brown);
+  color: white;
+  border-radius: var(--pd-small);
+  padding: 0.88rem 1.5rem;
 }
