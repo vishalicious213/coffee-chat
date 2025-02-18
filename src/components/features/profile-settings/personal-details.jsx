@@ -91,7 +91,7 @@ const PersonalDetails = () => {
         </div>
         <button>
           Save Details
-          <img src="public\icons\Right.svg"></img>
+          <img src="/icons/Right.svg"></img>
         </button>
       </form>
     </section>

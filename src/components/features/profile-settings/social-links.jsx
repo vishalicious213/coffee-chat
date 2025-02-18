@@ -101,7 +101,7 @@ const SocialLinks = () => {
                 </form>
                 <button className='save-links-button'>
                     <span>Save Links</span>
-                    <img src="../../../public/icons/Right1.svg"></img>
+                    <img src="/icons/Right1.svg"></img>
                 </button>
             </div>
         </div>
