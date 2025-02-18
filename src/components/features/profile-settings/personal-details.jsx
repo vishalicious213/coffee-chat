@@ -1,8 +1,8 @@
-import React from "react";
-import { useState } from "react";
-import Avatar from "./avatar";
-import "../../../App.css";
-import "./personal-details.css";
+import React from "react"
+import { useState } from "react"
+import Avatar from "./avatar"
+import "../../../App.css"
+import "./personal-details.css"
 
 const PersonalDetails = () => {
   const [formData, setFormData] = useState({
@@ -15,17 +15,19 @@ const PersonalDetails = () => {
   });
 
   function handleChange(event) {
-    const { name, value } = event.target;
+    const { name, value } = event.target
     setFormData((prevFormData) => ({
       ...prevFormData,
       [name]: value,
-    }));
+    }))
   }
 
   return (
-    <form className="form-container">
-      <h2>Personal Details</h2>
-      <Avatar />
+    <section className="form-container">
+    <h2>Personal Details</h2>
+    <Avatar />
+
+    <form className="personal-details-form">
       <div className="form-row">
         <div className="form-group">
           <label htmlFor="firstName">First Name</label>
@@ -87,8 +89,13 @@ const PersonalDetails = () => {
         />
         <div className="char-count">4/240</div>
       </div>
+      <button>
+        Save Details
+        <img src="public\icons\Right.svg"></img>
+      </button>
     </form>
-  );
-};
+    </section>
+  )
+}
 
-export default PersonalDetails;
+export default PersonalDetails

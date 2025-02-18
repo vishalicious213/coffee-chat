@@ -1,0 +1,17 @@
+.find-chat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.find-chat-circle {
+    background: gray;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+}
+
+.find-chat button {
+    outline: 1px solid red;
+}

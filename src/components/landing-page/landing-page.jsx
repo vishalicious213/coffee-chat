@@ -22,7 +22,7 @@ const LandingPage = ({changePage}) => {
                 <nav>
                     <ul>
                         <li>
-                            <img src="" alt="" />
+                            <img src="../../../public/icons/Right.svg" alt="" />
                         </li>
                         <li>About Us</li>
                         <li>FAQ</li>
@@ -38,7 +38,8 @@ const LandingPage = ({changePage}) => {
             {/* Hero section */}
             <section className='hero'>
                 <div className='hero-text'>
-                    <h1>Coffee chats,<br></br>simplified.</h1>
+                    {/* <h1>Coffee chats,<br/>simplified.</h1> */}
+                    <h1>Coffee chats, simplified.</h1>
                     <p>Use our tool to find like-minded and connect over a virtual coffee</p>
                     <button id="signup-btn" className="signup-btn" onClick={handleClick}>Sign Up</button>
                 </div>
@@ -125,7 +126,7 @@ const LandingPage = ({changePage}) => {
             {/* Footer */}
             <section className="footer">
                 <section>
-                    <img src=""/>
+                    <img src="../../../public/icons/Right.svg"/>
 
                     <ul>
                         <li>About Us</li>
