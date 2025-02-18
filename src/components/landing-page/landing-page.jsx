@@ -121,7 +121,7 @@ const LandingPage = ({changePage}) => {
                             <p>Tell us your interests, and we’ll connect you with someone who shares your goals and passions.</p>
                             <div className='benefits-cards-view-more'>
                                 <span>View more</span>
-                                <img src="public/icons/Right.svg"></img>
+                                <img src="public/icons/LightBrownArrow.svg"></img>
                             </div>
                         </section>
                         <section>
@@ -130,7 +130,7 @@ const LandingPage = ({changePage}) => {
                             <p>Meet professionals, students, and interesting people—right from home.</p>
                             <div className='benefits-cards-view-more'>
                                 <span>View more</span>
-                                <img src="public/icons/Right.svg"></img>
+                                <img src="public/icons/LightBrownArrow.svg"></img>
                             </div>
                         </section>
                         <section>
@@ -139,7 +139,7 @@ const LandingPage = ({changePage}) => {
                             <p>Set up a time that works for you and enjoy a relaxed, engaging conversation.</p>
                             <div className='benefits-cards-view-more'>
                                 <span>View more</span>
-                                <img src="public/icons/Right.svg"></img>
+                                <img src="public/icons/LightBrownArrow.svg"></img>
                             </div>
                         </section>
                     </section>
