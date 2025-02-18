@@ -13,7 +13,10 @@ const Connections = ({navTo}) => {
         <section className="">
             <div className="connections-heading">
                 <h2>Connections</h2>
-                <p onClick={() => navTo("icebreakers")}>View conversations starters</p>
+                <p onClick={() => navTo("icebreakers")}>
+                    View conversations starters
+                    <img src="/icons/arrow-top-right-on-square.svg" />
+                </p>
             </div>
             <section className="connections">
                 {examples}

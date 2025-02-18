@@ -65,6 +65,9 @@
 .connections-heading p{
     color: #47343A;
     text-align: right;
+    display: flex;
+    align-items: center;
+    gap: var(--pd-small);
 
     /* Paragraph/Small/Regular */
     font-family: Inter;
@@ -72,4 +75,8 @@
     font-style: normal;
     font-weight: 400;
     line-height: 1.25rem; /* 142.857% */
+}
+
+.connections-heading p:hover {
+    cursor: pointer;
 }
