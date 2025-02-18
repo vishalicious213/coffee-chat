@@ -554,7 +554,7 @@ input:checked ~ .accordion-content {
       letter-spacing: -0.04rem;
       margin: 0
   }
-  h1{
+  .hero h1{
     color: var(--Cream, #FEF9F4);
     text-align: center;
     
