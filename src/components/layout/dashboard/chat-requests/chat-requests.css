@@ -9,6 +9,9 @@
     flex: 1 0 0;
     border-radius: 0.5rem;
     border: 1px solid var(--Neutral-200, #E5E7EB);
+    max-height: 40vh;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 .chat-requests-container h2{
     color: #47343A;

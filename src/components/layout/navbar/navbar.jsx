@@ -28,13 +28,13 @@ const Navbar = () => {
         {/* Sidebar Nav Header */}
         <section className="top-sidebar-wrapper">
           <section className="sideBar-header">
-            <img src="public\icons\Company Logo.svg"></img>
+            <img src="public/icons/logo-dark.svg"></img>
             <ul>
               <li id="notification-bell">
-                <img src="public\icons\bell.svg"></img>
+                <img src="public/icons/bell.svg"></img>
               </li>
               <li id="hamburger-menu-icon">
-                <img src="public\icons\hamburger-icon.svg"></img>
+                <img src="public/icons/hamburger-icon.svg"></img>
               </li>
             </ul>
           </section>
@@ -44,15 +44,15 @@ const Navbar = () => {
           <ul className="profile-menu">
             {/* My dashboard - Section title */}
             <li id="home" onClick={() => handleClick("dashboard")}>
-              <img src="public\icons\home.svg"></img>
+              <img src="public/icons/home.svg"></img>
               Home
             </li>
             <li id="find-chat" onClick={() => handleClick("find-chat")}>
-              <img src="public\icons\microphone.svg"></img>
+              <img src="public/icons/microphone.svg"></img>
               Find a Chat
             </li>
             <li id="messages">
-              <img src="public\icons\chat-alt.svg"></img>
+              <img src="public/icons/chat-alt.svg"></img>
               Messages
             </li>
           </ul>
@@ -78,7 +78,7 @@ const Navbar = () => {
         <section className="sidebar-footer">
           <ul>
             <li>
-              <img src="public\icons\support-lifebuoy.svg"></img>
+              <img src="public/icons/support-lifebuoy.svg"></img>
               Support
             </li>
           </ul>
@@ -93,7 +93,7 @@ const Navbar = () => {
             </section>
             <img
               className="sidebar-footer-logout-icon"
-              src="public\icons\logout-right.svg"
+              src="public/icons/logout-right.svg"
             ></img>
           </section>
         </section>
