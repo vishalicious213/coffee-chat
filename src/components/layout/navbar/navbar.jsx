@@ -6,6 +6,7 @@ import SocialLinks from "../../features/profile-settings/social-links";
 import Dashboard from "../dashboard/dashboard";
 import FindChat from "../../features/find-chat/find-chat";
 import Match from "../../features/find-chat/match";
+import Icebreakers from "../../features/icebreakers/icebreakers";
 import "./navbar.css";
 
 const icons = [
@@ -106,11 +107,13 @@ const Navbar = () => {
         ) : setting === "social" ? (
           <SocialLinks />
         ) : setting === "dashboard" ? (
-          <Dashboard />
+          <Dashboard navTo={handleClick} />
         ) : setting === "find-chat" ? (
           <FindChat navTo={handleClick} />
         ) : setting === "find-match" ? (
           <Match />
+        ) : setting === "icebreakers" ? (
+          <Icebreakers />
         ) : null}
       </section>
     </section>
