@@ -16,7 +16,7 @@ const icons = [
 ]
 
 const Navbar = () => {
-  const [setting, setSetting] = useState("dashboard")
+  const [setting, setSetting] = useState("dashboard");
 
   const handleClick = (newSetting) => {
     setSetting(newSetting)
@@ -26,23 +26,24 @@ const Navbar = () => {
     <section id="profile-settings" className="profile-settings">
       <section id="profile-settings-nav" className="profile-settings-nav">
         {/* Sidebar Nav Header */}
-        <section className="sideBar-header">
-          <img src="public\icons\Company Logo.svg"></img>
-          <ul>
-            <li id="notification-bell">
-              <img src="public\icons\bell.svg"></img>
-            </li>
-            <li id="hamburger-menu-icon">
-              <img src="public\icons\hamburger-icon.svg"></img>
-            </li>
-          </ul>
-        </section>
+        <section className="top-sidebar-wrapper">
+          <section className="sideBar-header">
+            <img src="public\icons\Company Logo.svg"></img>
+            <ul>
+              <li id="notification-bell">
+                <img src="public\icons\bell.svg"></img>
+              </li>
+              <li id="hamburger-menu-icon">
+                <img src="public\icons\hamburger-icon.svg"></img>
+              </li>
+            </ul>
+          </section>
 
         {/* Top section of nav items */}
         <h2>My Dashboard</h2>
         <ul className="profile-menu">
           {/* My dashboard - Section title */}
-          <li id="home" onClick={() => handleClick("home")}>Home</li>
+          <li id="home" onClick={() => handleClick("dashboard")}>Home</li>
           <li id="find-chat" onClick={() => handleClick("find-chat")}>Find a Chat</li>
           <li id="messages">Messages</li>
         </ul>
@@ -69,12 +70,19 @@ const Navbar = () => {
           <li>Support</li>
         </ul>
 
-        {/* Avatar with info and logout button */}
-        {/* We have to grab the profile pic for the img below */}
-        <section>
-          <img src={icons[0]}></img>
-          <span>Designership</span>
-          <span>email@email.com</span>
+          {/* Avatar with info and logout button */}
+          {/* We have to grab the profile pic for the img below */}
+          <section className="sidebar-footer-button">
+            <img src="public/icons/avatar-icon.svg"></img>
+            <section className="sidebar-footer-content">
+              <span>Designership</span>
+              <span>email@email.com</span>
+            </section>
+            <img
+              className="sidebar-footer-logout-icon"
+              src="public\icons\logout-right.svg"
+            ></img>
+          </section>
         </section>
       </section>
 
@@ -94,7 +102,7 @@ const Navbar = () => {
         ) : null}
       </section>
     </section>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
