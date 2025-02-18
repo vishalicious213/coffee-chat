@@ -31,6 +31,9 @@ h1 {
 }
 
 .questions-list {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
     list-style-position: inside;
     padding: 50px;
     background-color: white;
