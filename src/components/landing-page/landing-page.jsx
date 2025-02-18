@@ -29,8 +29,18 @@ const LandingPage = ({changePage}) => {
                     </ul>
                     <ul>
                         {/* DON'T GET RID OF THESE BUTTONS */}
-                        <button id="login-btn" className="login-btn" onClick={handleClick}>Log In</button>
-                        <button id="signup-btn" className="signup-btn" onClick={handleClick}>Sign Up</button>
+                        {/* <button id="login-btn" className="login-btn" onClick={handleClick}>Log In</button>
+                        <button id="signup-btn" className="signup-btn" onClick={handleClick}>Sign Up</button> */}
+                        <a href="https://codebrew.authui.site/">
+                            <button id="login-btn" className="login-btn" >
+                                Log in
+                            </button>
+                        </a>
+                        <a href="https://codebrew.authui.site/sign-up">
+                            <button id="signup-btn" className="signup-btn" >
+                                Sign Up
+                            </button>
+                        </a>
                     </ul>
                 </nav>
             </section>
