@@ -22,16 +22,24 @@ const LandingPage = ({changePage}) => {
                 <nav>
                     <ul>
                         <li>
-                            <img src="../../../public/icons/Right.svg" alt="" />
+                            <img className="logo-landing" src="../../../public/icons/logo-light.svg" alt="" />
                         </li>
-                        <li>About Us</li>
-                        <li>FAQ</li>
+                        <li className="nav-item">About Us</li>
+                        <li className="nav-item">FAQ</li>
+                        <li className="nav-item">
+                            <a href="mailto:coffeechat1@protonmail.com">Contact</a>
+                        </li>
                     </ul>
                     <ul>
                         {/* DON'T GET RID OF THESE BUTTONS */}
-                        <button id="login-btn" className="login-btn" onClick={handleClick}>Log In</button>
-                        <button id="signup-btn" className="signup-btn" onClick={handleClick}>Sign Up</button>
+                        <button id="login-btn" className="login-btn nav-item" onClick={handleClick}>Log In</button>
+                        <button id="signup-btn" className="signup-btn nav-item" onClick={handleClick}>Sign Up</button>
                     </ul>
+                    <button className="landing-mobile-menu-button">
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <img src="../../../public/icons/MenuLandingMobile.svg"></img>
+                        </a>
+                    </button>
                 </nav>
             </section>
 
@@ -40,7 +48,7 @@ const LandingPage = ({changePage}) => {
                 <div className='hero-text'>
                     {/* <h1>Coffee chats,<br/>simplified.</h1> */}
                     <h1>Coffee chats, simplified.</h1>
-                    <p>Use our tool to find like-minded and connect over a virtual coffee</p>
+                    <p>Meet like-minded people and connect over a virtual coffee—anytime, anywhere.</p>
                     <button id="signup-btn" className="signup-btn" onClick={handleClick}>Sign Up</button>
                 </div>
             </section>
@@ -51,30 +59,30 @@ const LandingPage = ({changePage}) => {
                     {/* Left-hand side */}
                     <div className='how-to-get-started-text-section'>
                         <h2>How to get started</h2>
-                        <p>Find coffee chats easily with [COMPANY] with others in your field. Get started 100% for free.</p>
+                        <p>Finding great conversations is easy. Just follow these three simple steps:</p>
                     </div>
 
                     {/* Accordion Section */}
                     <div className="accordion-wrapper">
                         <div className="accordion">
                             <input type="radio" name="radio-a" id="check1" defaultChecked />
-                            <label className="accordion-label" htmlFor="check1">Accordion 1</label>
+                            <label className="accordion-label" htmlFor="check1">Sign Up</label>
                             <div className="accordion-content">
-                                <p>Hey there, you are watching codiesbugs &#128522;</p>
+                                <p>Create a profile and tell us a little about yourself. It’s free and takes less than a minute.</p>
                             </div>
                         </div>
                         <div className="accordion">
                             <input type="radio" name="radio-a" id="check2" />
-                            <label className="accordion-label" htmlFor="check2">Accordion 2</label>
+                            <label className="accordion-label" htmlFor="check2">Get Matched</label>
                             <div className="accordion-content">
-                                <p>I hope you are enjoying the video. Don't forget to give your feedback in the comment section.</p>
+                                <p>We’ll pair you with someone who shares your interests, goals, or industry.</p>
                             </div>
                         </div>
                         <div className="accordion">
                             <input type="radio" name="radio-a" id="check3" />
-                            <label className="accordion-label" htmlFor="check3">Accordion 3</label>
+                            <label className="accordion-label" htmlFor="check3">Grab a Virtual Coffee</label>
                             <div className="accordion-content">
-                                <p>If you liked this, don't forget to subscribe to the channel for the latest videos.</p>
+                                <p>Schedule a time, hop on a call, and enjoy a great conversation!</p>
                             </div>
                         </div>
                     </div>
@@ -86,36 +94,37 @@ const LandingPage = ({changePage}) => {
             <section className='benefits'>
                 <div className='benefits-container'>
                     <div className='benefits-title'>
-                        <span>Why [COMPANY]</span>
-                        <h3>A catchy heading that brings some<br></br> interest to visitors</h3>
+                        <span>Why codebrew</span>
+                        <h3>Meet new people over a virtual coffee</h3>
+                        <p>Making meaningful connections shouldn’t be hard. Whether you’re looking for mentorship, networking, or just a great conversation, our platform helps you find like-minded people for a virtual coffee chat.</p>
                     </div>
                     {/* 3 Features layout */}
                     <section className='benefits-cards'>
                         <section>
-                            <img className="benefits-cards-icons" src="../../../public/icons/Right.svg"></img>
-                            <h4>The most inspiring feature</h4>
-                            <p>Tortor interdum condimentum nunc molestie quam lectus euismod pulvinar risus. Cursus in odio aenean.</p>
+                            <img className="benefits-cards-icons" src="../../../public/icons/brown-star-empty.svg"></img>
+                            <h4>Effortless Matching</h4>
+                            <p>Tell us your interests, and we’ll connect you with someone who shares your goals and passions.</p>
                             <div className='benefits-cards-view-more'>
-                                <span>View more</span>
-                                <img src="../../../public/icons/Right.svg"></img>
+                                <span>Learn more</span>
+                                <img src="../../../public/icons/LightBrownArrow.svg"></img>
                             </div>
                         </section>
                         <section>
-                            <img className="benefits-cards-icons" src="../../../public/icons/Right.svg"></img>
-                            <h4>The most inspiring feature</h4>
-                            <p>Tortor interdum condimentum nunc molestie quam lectus euismod pulvinar risus. Cursus in odio aenean.</p>
+                            <img className="benefits-cards-icons" src="../../../public/icons/brown-globe.svg"></img>
+                            <h4>Expand Your Network</h4>
+                            <p>Meet professionals, students, and interesting people—right from home.</p>
                             <div className='benefits-cards-view-more'>
-                                <span>View more</span>
-                                <img src="../../../public/icons/Right.svg"></img>
+                                <span>Get started</span>
+                                <img src="../../../public/icons/LightBrownArrow.svg"></img>
                             </div>
                         </section>
                         <section>
-                            <img className="benefits-cards-icons" src="../../../public/icons/Right.svg"></img>
-                            <h4>The most inspiring feature</h4>
-                            <p>Tortor interdum condimentum nunc molestie quam lectus euismod pulvinar risus. Cursus in odio aenean.</p>
+                            <img className="benefits-cards-icons" src="../../../public/icons/brown-clock.svg"></img>
+                            <h4>Chat on Your Schedule</h4>
+                            <p>Set up a time that works for you and enjoy a relaxed, engaging conversation.</p>
                             <div className='benefits-cards-view-more'>
-                                <span>View more</span>
-                                <img src="../../../public/icons/Right.svg"></img>
+                                <span>Read more</span>
+                                <img src="../../../public/icons/LightBrownArrow.svg"></img>
                             </div>
                         </section>
                     </section>
@@ -126,15 +135,15 @@ const LandingPage = ({changePage}) => {
             {/* Footer */}
             <section className="footer">
                 <section>
-                    <img src="../../../public/icons/Right.svg"/>
+                    <img src="../../../public/icons/logo-dark.svg"/>
 
                     <ul>
                         <li>About Us</li>
                         <li>FAQ</li>
-                        <li>Contact</li>
+                        <li><a href="mailto:coffeechat1@protonmail.com">Contact</a></li>
                     </ul>
 
-                    <span>© 2025 [COMPANY]. All rights reserved.</span>
+                    <span>© 2025 codebrew. All rights reserved.</span>
                 </section>
             </section>
         </section>

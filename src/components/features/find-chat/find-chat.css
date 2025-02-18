@@ -1,17 +1,53 @@
 .find-chat {
     display: flex;
+    padding: 0rem 4rem 11.125rem 4rem;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    text-align: center;
+    gap: 1.875rem;
+    flex: 1 0 0;
+    align-self: stretch;
 }
+.find-chat h2{
+    color: #47343A;
+    /* Display/Bold/Large */
+    font-family: Inter;
+    font-size: 3.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.5rem; /* 107.692% */
+    letter-spacing: -0.065rem;
+}
+.find-chat p{
+    color: #47343A;
+    text-align: center;
 
+    /* Heading/H3/Medium/Desktop */
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.5rem; /* 125% */
+    letter-spacing: -0.04rem;
+}
 .find-chat-circle {
-    background: gray;
     border-radius: 50%;
-    height: 4rem;
-    width: 4rem;
+    width: 8.725rem;
+    height: 8.72519rem;
 }
 
 .find-chat button {
-    outline: 1px solid red;
+    display: flex;
+    width: 18.75rem;
+    padding: 0.875rem 1.25rem;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--Dark-Brown, #47343A);
+    background: var(--Dark-Brown, #47343A);
+
+    /* Drop shadow/Small */
+    box-shadow: 0px 2px 6px 0px rgba(16, 24, 40, 0.06);
 }
