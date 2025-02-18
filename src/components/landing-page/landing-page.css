@@ -144,6 +144,17 @@ nav ul .signup-btn{
   width: 9rem
 }
 
+/* login & signup buttons have anchor tags  */
+ 
+nav ul a,  .hero-text a {
+  text-decoration: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+
 /* Hero section styling */
 
 .hero{

@@ -32,8 +32,18 @@ const LandingPage = ({changePage}) => {
                     </ul>
                     <ul>
                         {/* DON'T GET RID OF THESE BUTTONS */}
-                        <button id="login-btn" className="login-btn nav-item" onClick={handleClick}>Log In</button>
-                        <button id="signup-btn" className="signup-btn nav-item" onClick={handleClick}>Sign Up</button>
+                        <button id="login-btn" className="login-btn" onClick={handleClick}>Log In</button>
+                        <button id="signup-btn" className="signup-btn" onClick={handleClick}>Sign Up</button>
+                        {/* <a href="https://codebrew.authui.site/">
+                            <button id="login-btn" className="login-btn" >
+                                Log in
+                            </button>
+                        </a>
+                        <a href="https://codebrew.authui.site/sign-up">
+                            <button id="signup-btn" className="signup-btn" >
+                                Sign Up
+                            </button>
+                        </a> */}
                     </ul>
                     <button className="landing-mobile-menu-button">
                         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -48,8 +58,13 @@ const LandingPage = ({changePage}) => {
                 <div className='hero-text'>
                     {/* <h1>Coffee chats,<br/>simplified.</h1> */}
                     <h1>Coffee chats, simplified.</h1>
-                    <p>Meet like-minded people and connect over a virtual coffee—anytime, anywhere.</p>
-                    <button id="signup-btn" className="signup-btn" onClick={handleClick}>Sign Up</button>
+                    <p>Use our tool to find like-minded and connect over a virtual coffee</p>
+                    {/* <button id="signup-btn" className="signup-btn" onClick={handleClick}>Sign Up</button> */}
+                    <a href="https://codebrew.authui.site/sign-up">
+                        <button id="signup-btn" className="signup-btn" >
+                            Sign Up
+                        </button>
+                    </a>
                 </div>
             </section>
 
@@ -105,8 +120,8 @@ const LandingPage = ({changePage}) => {
                             <h4>Effortless Matching</h4>
                             <p>Tell us your interests, and we’ll connect you with someone who shares your goals and passions.</p>
                             <div className='benefits-cards-view-more'>
-                                <span>Learn more</span>
-                                <img src="../../../public/icons/LightBrownArrow.svg"></img>
+                                <span>View more</span>
+                                <img src="public/icons/Right.svg"></img>
                             </div>
                         </section>
                         <section>
@@ -114,8 +129,8 @@ const LandingPage = ({changePage}) => {
                             <h4>Expand Your Network</h4>
                             <p>Meet professionals, students, and interesting people—right from home.</p>
                             <div className='benefits-cards-view-more'>
-                                <span>Get started</span>
-                                <img src="../../../public/icons/LightBrownArrow.svg"></img>
+                                <span>View more</span>
+                                <img src="public/icons/Right.svg"></img>
                             </div>
                         </section>
                         <section>
@@ -123,8 +138,8 @@ const LandingPage = ({changePage}) => {
                             <h4>Chat on Your Schedule</h4>
                             <p>Set up a time that works for you and enjoy a relaxed, engaging conversation.</p>
                             <div className='benefits-cards-view-more'>
-                                <span>Read more</span>
-                                <img src="../../../public/icons/LightBrownArrow.svg"></img>
+                                <span>View more</span>
+                                <img src="public/icons/Right.svg"></img>
                             </div>
                         </section>
                     </section>
@@ -135,7 +150,7 @@ const LandingPage = ({changePage}) => {
             {/* Footer */}
             <section className="footer">
                 <section>
-                    <img src="../../../public/icons/logo-dark.svg"/>
+                    <img src="public/icons/Right.svg"/>
 
                     <ul>
                         <li>About Us</li>
