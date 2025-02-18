@@ -30,7 +30,7 @@ const SocialLinks = () => {
             <div className='social-links-form-container'>
                 <form>
                     <div className='label-and-input-socials'>
-                        <label for="linkedin">LinkedIn</label>
+                        <label htmlFor="linkedin">LinkedIn</label>
                         <input
                             id="linkedin"
                             type="text"
@@ -41,7 +41,7 @@ const SocialLinks = () => {
                         />
                     </div>
                     <div className='label-and-input-socials'>
-                        <label for="bluesky">Bluesky</label>
+                        <label htmlFor="bluesky">Bluesky</label>
                         <input
                             id="bluesky"
                             type="text"
@@ -52,7 +52,7 @@ const SocialLinks = () => {
                         />
                     </div>
                     <div className='label-and-input-socials'>
-                        <label for="x">X</label>
+                        <label htmlFor="x">X</label>
                         <input
                             id="x"
                             type="text"
@@ -64,7 +64,7 @@ const SocialLinks = () => {
                     </div>
 
                     <div className='label-and-input-socials'>
-                        <label for="github">Github</label>
+                        <label htmlFor="github">Github</label>
                         <input
                             id="github"
                             type="text"
@@ -76,7 +76,7 @@ const SocialLinks = () => {
                     </div>
 
                     <div className='label-and-input-socials'>
-                        <label for="website">Personal Website</label>
+                        <label htmlFor="website">Personal Website</label>
                         <input
                             id="website"
                             type="text"
@@ -88,7 +88,7 @@ const SocialLinks = () => {
                     </div>
 
                     <div className='label-and-input-socials'>
-                        <label for="blog">Blog</label>
+                        <label htmlFor="blog">Blog</label>
                         <input
                             id="blog"
                             type="email"
