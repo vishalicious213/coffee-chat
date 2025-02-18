@@ -51,7 +51,12 @@ const LandingPage = ({changePage}) => {
                     {/* <h1>Coffee chats,<br/>simplified.</h1> */}
                     <h1>Coffee chats, simplified.</h1>
                     <p>Use our tool to find like-minded and connect over a virtual coffee</p>
-                    <button id="signup-btn" className="signup-btn" onClick={handleClick}>Sign Up</button>
+                    {/* <button id="signup-btn" className="signup-btn" onClick={handleClick}>Sign Up</button> */}
+                    <a href="https://codebrew.authui.site/sign-up">
+                        <button id="signup-btn" className="signup-btn" >
+                            Sign Up
+                        </button>
+                    </a>
                 </div>
             </section>
 
