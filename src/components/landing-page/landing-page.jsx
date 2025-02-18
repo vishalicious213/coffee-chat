@@ -150,7 +150,7 @@ const LandingPage = ({changePage}) => {
             {/* Footer */}
             <section className="footer">
                 <section>
-                    <img src="public/icons/Right.svg"/>
+                    <img src="public/icons/logo-dark.svg"/>
 
                     <ul>
                         <li>About Us</li>
