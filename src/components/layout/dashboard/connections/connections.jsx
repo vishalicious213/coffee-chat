@@ -5,7 +5,7 @@ import "./connections.css"
 const test = ["Vish Singh", "Samir Shuman", "Nabeeha Ghani", "Giovanni Nazario", "Vish Singh", "Samir Shuman", "Nabeeha Ghani", "Vish Singh", "Samir Shuman"]
 
 const examples = test.map((person, index) => (
-    <ConnectionsCard name={person} key={person} />
+    <ConnectionsCard name={person} key={index} />
 ))
 
 const Connections = () => {
