@@ -46,9 +46,9 @@ const LandingPage = ({changePage}) => {
                         </a> */}
                     </ul>
                     <button className="landing-mobile-menu-button">
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        {/* <a href="javascript:void(0);" className="icon" onClick="myFunction()">
                             <img src="../../../public/icons/MenuLandingMobile.svg"></img>
-                        </a>
+                        </a> */}
                     </button>
                 </nav>
             </section>
