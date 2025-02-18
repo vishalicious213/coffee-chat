@@ -14,10 +14,9 @@
 
     /* Heading/H4/Medium/Desktop */
     font-family: Inter;
-    font-size: 1.75rem;
+    font-size: 1.125rem;
     font-style: normal;
-    font-weight: 500;
-    line-height: 2.25rem; /* 128.571% */
-    letter-spacing: -0.035rem;
+    font-weight: 600;
+    line-height: 1.75rem; /* 155.556% */
     align-self: flex-start;
 }
