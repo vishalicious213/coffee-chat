@@ -5,38 +5,22 @@ import AvailabilitySelector from "../../features/profile-settings/availability"
 import SocialLinks from "../../features/profile-settings/social-links"
 import Dashboard from "../dashboard/dashboard"
 import FindChat from "../../features/find-chat/find-chat"
+import Match from "../../features/find-chat/match"
+
 import "./navbar.css"
 
 const icons = [
   "/icons/finger-print.svg",
   "/icons/calendar-days.svg",
   "/icons/link.svg",
-];
+]
 
 const Navbar = () => {
   const [setting, setSetting] = useState("dashboard")
 
-  const handleClick = (event) => {
-    if (event.target.id === "details") {
-      setSetting("details")
-    }
-
-    if (event.target.id === "availability") {
-      setSetting("availability")
-    }
-
-    if (event.target.id === "social") {
-      setSetting("social")
-    }
-
-    if (event.target.id === "home") {
-      setSetting("dashboard")
-    }
-
-    if (event.target.id === "find-chat") {
-      setSetting("find-chat")
-    }
-  };
+  const handleClick = (newSetting) => {
+    setSetting(newSetting)
+  }
 
   return (
     <section id="profile-settings" className="profile-settings">
@@ -58,8 +42,8 @@ const Navbar = () => {
         <h2>My Dashboard</h2>
         <ul className="profile-menu">
           {/* My dashboard - Section title */}
-          <li id="home" onClick={handleClick}>Home</li>
-          <li id="find-chat" onClick={handleClick}>Find a Chat</li>
+          <li id="home" onClick={() => handleClick("home")}>Home</li>
+          <li id="find-chat" onClick={() => handleClick("find-chat")}>Find a Chat</li>
           <li id="messages">Messages</li>
         </ul>
 
@@ -67,15 +51,15 @@ const Navbar = () => {
         <h2>My Profile</h2>
         <ul id="profile-menu" className="profile-menu">
           {/* My produce - section title */}
-          <li id="details" onClick={handleClick}>
+          <li id="details" onClick={() => handleClick("details")}>
             <img src={icons[0]}></img>
             Personal Details
           </li>
-          <li id="availability" onClick={handleClick}>
+          <li id="availability" onClick={() => handleClick("availability")}>
             <img src={icons[1]}></img>
             Availability
           </li>
-          <li id="social" onClick={handleClick}>
+          <li id="social" onClick={() => handleClick("social")}>
             <img src={icons[2]}></img>
             Social Links
           </li>
@@ -104,6 +88,8 @@ const Navbar = () => {
         ) : setting === "dashboard" ? (
           <Dashboard />
         ) : setting === "find-chat" ? (
+          <FindChat navTo={handleClick} />
+        ) : setting === "find-match" ? (
           <FindChat />
         ) : null}
       </section>
