@@ -15,10 +15,8 @@
 .form-container h2 {
   color: var(--clr-brown);
   font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.75rem; /* 140% */
-  letter-spacing: -0.025rem;
 }
 
 /* Avatar Section */
