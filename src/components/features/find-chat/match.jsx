@@ -1,4 +1,5 @@
 import React from 'react'
+import MatchCandidate from './match-candidate'
 import "./match.css"
 
 const Match = () => {
@@ -10,8 +11,10 @@ const Match = () => {
                 <p>You have a 94% compatibility score based on your interests and experience.</p>
             </section>
 
-            <section id="render-chat-match" className="render-chat-match"></section>
-            
+            <section id="render-chat-match" className="render-chat-match">
+                <MatchCandidate />
+            </section>
+
             <section id="match-buttons" className="match-buttons">
                 <button id="send-chat-request-btn" className="send-chat-request-btn">Send chat request</button>
                 <button id="find-another-btn" className="find-another-btn">Find me another</button>
