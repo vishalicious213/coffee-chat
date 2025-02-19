@@ -6,12 +6,12 @@ const Icebreakers = () => {
     // Initialize Appwrite client
     const client = new Client()
         .setEndpoint('https://cloud.appwrite.io/v1')
-        .setProject('67b157e600336980e6ee');
+        .setProject(import.meta.env.VITE_PROJECT_ID);
 
     const databases = new Databases(client);
 
-    const DATABASE_ID = '67b1582900033fb8f3b0';
-    const COLLECTION_ID = '67b1585b0038a4c4e142';
+    const DATABASE_ID = import.meta.env.VITE_DATABASE_ID;
+    const COLLECTION_ID = import.meta.env.VITE_ICEBREAKERS_COLLECTION_ID;
 
     const [questions, setQuestions] = useState([]);
     const [loading, setLoading] = useState(false);
