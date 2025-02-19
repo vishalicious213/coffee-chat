@@ -16,8 +16,14 @@ const Match = () => {
             </section>
 
             <section id="match-buttons" className="match-buttons">
-                <button id="send-chat-request-btn" className="send-chat-request-btn">Send chat request</button>
-                <button id="find-another-btn" className="find-another-btn">Find me another</button>
+                <button id="send-chat-request-btn" className="send-chat-request-btn">
+                    Send chat request
+                    <img src="/icons/check.svg"></img>
+                </button>
+                <button id="find-another-btn" className="find-another-btn">
+                    Find me another
+                    <img src="/icons/x.svg"></img>
+                </button>
             </section>
         </section>
     )
