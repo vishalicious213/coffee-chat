@@ -18,6 +18,25 @@ const MatchCandidate = () => {
                 <h3>Experience</h3>
                 <p className="candidate-bio-experience">6 years</p>
             </section>
+
+            <section className="candidate-interests">
+                <h3>Interests</h3>
+                <section className="candidate-interests-list">
+                    <div>Interest Here</div>
+                    <div>Interest Here</div>
+                    <div>Interest Here</div>
+                    <div>Interest Here</div>
+                    <div>Interest Here</div>
+                    <div>Interest Here</div>
+                </section>
+            </section>
+
+            <section className="candidate-availability">
+                <h3>Available Times</h3>
+                <p>Monday 6-9pm EST</p>
+                <p>Tuesday 3-4pm EST</p>
+                <p>Friday 1-4pm EST</p>
+            </section>
         </section>
     )
 }
