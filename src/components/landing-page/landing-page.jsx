@@ -15,8 +15,8 @@ const LandingPage = ({changePage}) => {
                         <li>
                             <img className="logo-landing" src="/icons/logo-light.svg" alt="" />
                         </li>
-                        <li id="about-us" className="nav-item" onClick={() => handleClick("about-us")}>About Us</li>
-                        <li className="nav-item">FAQ</li>
+                        <li className="nav-item" onClick={() => handleClick("about-us")}>About Us</li>
+                        <li className="nav-item" onClick={() => handleClick("faq")}>FAQ</li>
                         <li className="nav-item">
                             <a href="mailto:coffeechat1@protonmail.com">Contact</a>
                         </li>
