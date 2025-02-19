@@ -1,0 +1,11 @@
+.candidate-header {
+    display: flex;
+}
+
+.candidate-header img {
+    width: 4rem;
+}
+
+.candidate-interests-list {
+    display: flex;
+}
