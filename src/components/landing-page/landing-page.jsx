@@ -1,22 +1,9 @@
 import React from 'react'
-import { useState } from 'react'
 import "./landing-page.css"
 
 const LandingPage = ({changePage}) => {
-    const [pageToLoad, setPageToLoad] = useState("details")
-
-    const handleClick = (event) => {
-        if (event.target.id === "login-btn") {
-            changePage("navbar")
-        } 
-
-        if (event.target.id === "signup-btn") {
-            changePage("signup")
-        }
-
-        if (event.target.id === "about-us") {
-            changePage("about-us")
-        }
+    const handleClick = (pageToLoad) => {
+        changePage(pageToLoad)
     }
 
     return (
@@ -28,7 +15,7 @@ const LandingPage = ({changePage}) => {
                         <li>
                             <img className="logo-landing" src="/icons/logo-light.svg" alt="" />
                         </li>
-                        <li id="about-us" className="nav-item" onClick={handleClick}>About Us</li>
+                        <li id="about-us" className="nav-item" onClick={() => handleClick("about-us")}>About Us</li>
                         <li className="nav-item">FAQ</li>
                         <li className="nav-item">
                             <a href="mailto:coffeechat1@protonmail.com">Contact</a>
@@ -36,8 +23,8 @@ const LandingPage = ({changePage}) => {
                     </ul>
                     <ul>
                         {/* DON'T GET RID OF THESE BUTTONS */}
-                        <button id="login-btn" className="login-btn" onClick={handleClick}>Log In</button>
-                        {/* <button id="signup-btn" className="signup-btn" onClick={handleClick}>Sign Up</button> */}
+                        <button id="login-btn" className="login-btn" onClick={() => handleClick("navbar")}>Log In</button>
+                        {/* <button id="signup-btn" className="signup-btn" onClick={() => handleClick("signup")}>Sign Up</button> */}
                         {/* <a href="https://codebrew.authui.site/">
                             <button id="login-btn" className="login-btn" >
                                 Log in
@@ -60,7 +47,6 @@ const LandingPage = ({changePage}) => {
             {/* Hero section */}
             <section className='hero'>
                 <div className='hero-text'>
-                    {/* <h1>Coffee chats,<br/>simplified.</h1> */}
                     <h1>Coffee chats, simplified.</h1>
                     <p>Use our tool to find like-minded and connect over a virtual coffee</p>
                     {/* <button id="signup-btn" className="signup-btn" onClick={handleClick}>Sign Up</button> */}
@@ -87,14 +73,14 @@ const LandingPage = ({changePage}) => {
                             <input type="radio" name="radio-a" id="check1" defaultChecked />
                             <label className="accordion-label" htmlFor="check1">Sign Up</label>
                             <div className="accordion-content">
-                                <p>Create a profile and tell us a little about yourself. It’s free and takes less than a minute.</p>
+                                <p>Create a profile and tell us a little about yourself. It's free and takes less than a minute.</p>
                             </div>
                         </div>
                         <div className="accordion">
                             <input type="radio" name="radio-a" id="check2" />
                             <label className="accordion-label" htmlFor="check2">Get Matched</label>
                             <div className="accordion-content">
-                                <p>We’ll pair you with someone who shares your interests, goals, or industry.</p>
+                                <p>We'll pair you with someone who shares your interests, goals, or industry.</p>
                             </div>
                         </div>
                         <div className="accordion">
@@ -115,14 +101,14 @@ const LandingPage = ({changePage}) => {
                     <div className='benefits-title'>
                         <span>Why codebrew</span>
                         <h3>Meet new people over a virtual coffee</h3>
-                        <p>Making meaningful connections shouldn’t be hard. Whether you’re looking for mentorship, networking, or just a great conversation, our platform helps you find like-minded people for a virtual coffee chat.</p>
+                        <p>Making meaningful connections shouldn't be hard. Whether you're looking for mentorship, networking, or just a great conversation, our platform helps you find like-minded people for a virtual coffee chat.</p>
                     </div>
                     {/* 3 Features layout */}
                     <section className='benefits-cards'>
                         <section>
                             <img className="benefits-cards-icons" src="/icons/brown-star-empty.svg"></img>
                             <h4>Effortless Matching</h4>
-                            <p>Tell us your interests, and we’ll connect you with someone who shares your goals and passions.</p>
+                            <p>Tell us your interests, and we'll connect you with someone who shares your goals and passions.</p>
                             <div className='benefits-cards-view-more'>
                                 <span>View more</span>
                                 <img src="/icons/LightBrownArrow.svg"></img>
