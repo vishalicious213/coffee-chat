@@ -7,7 +7,7 @@ const Match = () => {
         <section id="match" className="match">
             <h2>Find Chat</h2>
             <section>
-                <p>Woohoo! Check out your new match</p>
+                <p><img src="/icons/star-empty.svg" />Woohoo! Check out your new match</p>
                 <p>You have a 94% compatibility score based on your interests and experience.</p>
             </section>
 
