@@ -11,6 +11,13 @@ const MatchCandidate = () => {
                     <p className="match-candidate-title">Short title</p>
                 </div>
             </section>
+
+            <section className="candidate-bio">
+                <h3>Bio</h3>
+                <p className="candidate-bio-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae sequi voluptas, sapiente necessitatibus sunt et ipsa quaerat tempora voluptate, inventore odit culpa, nobis blanditiis! Repellendus sed laudantium magnam veritatis recusandae!</p>
+                <h3>Experience</h3>
+                <p className="candidate-bio-experience">6 years</p>
+            </section>
         </section>
     )
 }
