@@ -33,9 +33,9 @@ const MatchCandidate = () => {
 
             <section className="candidate-availability">
                 <h3>Available Times</h3>
-                <p>Monday 6-9pm EST</p>
-                <p>Tuesday 3-4pm EST</p>
-                <p>Friday 1-4pm EST</p>
+                <p><img src="/icons/clock.svg" alt="clock" /> Monday 6-9pm EST</p>
+                <p><img src="/icons/clock.svg" alt="clock" /> Tuesday 3-4pm EST</p>
+                <p><img src="/icons/clock.svg" alt="clock" /> Friday 1-4pm EST</p>
             </section>
         </section>
     )
