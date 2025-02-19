@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import LandingPage from './components/landing-page/landing-page'
+import AboutUs from './components/landing-page/about-us'
 import Navbar from './components/layout/navbar/navbar'
 import Signup from './components/features/signup/signup'
 import './App.css'
