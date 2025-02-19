@@ -3,6 +3,7 @@ import LandingPage from './components/landing-page/landing-page'
 import AboutUs from './components/landing-page/about-us'
 import Navbar from './components/layout/navbar/navbar'
 import Signup from './components/features/signup/signup'
+import Faq from './components/landing-page/faq'
 import './App.css'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           : pageToLoad === "navbar" ? <Navbar />
           : pageToLoad === "signup" ? <Signup />
           : pageToLoad === "about-us" ? <AboutUs />
+          : pageToLoad === "faq" ? <Faq />
           : null}
       </main>
     </>
