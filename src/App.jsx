@@ -13,6 +13,7 @@ function App() {
         {pageToLoad === "landingpage" ? <LandingPage changePage={setPageToLoad} />
           : pageToLoad === "navbar" ? <Navbar />
           : pageToLoad === "signup" ? <Signup />
+          : pageToLoad === "about-us" ? <AboutUs />
           : null}
       </main>
     </>

@@ -13,6 +13,10 @@ const LandingPage = ({changePage}) => {
         if (event.target.id === "signup-btn") {
             changePage("signup")
         }
+
+        if (event.target.id === "about-us") {
+            changePage("about-us")
+        }
     }
 
     return (
@@ -24,7 +28,7 @@ const LandingPage = ({changePage}) => {
                         <li>
                             <img className="logo-landing" src="/icons/logo-light.svg" alt="" />
                         </li>
-                        <li className="nav-item">About Us</li>
+                        <li id="about-us" className="nav-item" onClick={handleClick}>About Us</li>
                         <li className="nav-item">FAQ</li>
                         <li className="nav-item">
                             <a href="mailto:coffeechat1@protonmail.com">Contact</a>
